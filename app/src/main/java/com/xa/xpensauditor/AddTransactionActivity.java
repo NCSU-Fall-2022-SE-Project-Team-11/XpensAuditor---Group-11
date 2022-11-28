@@ -54,10 +54,10 @@ import org.json.JSONObject;
 
 public class AddTransactionActivity extends AppCompatActivity {
 
-    private Firebase mRootRef;
-    private Firebase RefUid;
-    private Firebase RefTran1, RefCatSum1, RefCat, UnCatTran;
-    private String Tid;
+//    private Firebase mRootRef;
+//    private Firebase RefUid;
+//    private Firebase RefTran1, RefCatSum1, RefCat, UnCatTran;
+//    private String Tid;
     private ArrayList<String> Catg = new ArrayList<>();
     private Button AddTran;
     private EditText Amnt;
@@ -1120,7 +1120,7 @@ public class AddTransactionActivity extends AppCompatActivity {
         activity = this;
 
         mRootRef = new Firebase("https://xpensauditor-g11-default-rtdb.firebaseio.com/");
-
+        String test_string;
         mRootRef.keepSynced(true);
         FirebaseAuth auth = FirebaseAuth.getInstance();
         String Uid = auth.getUid();
