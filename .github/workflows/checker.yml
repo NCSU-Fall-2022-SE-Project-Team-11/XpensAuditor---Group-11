@@ -1,0 +1,15 @@
+name: Checkers for XpensAuditor
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkstyle for Java
+        uses: dbelyaev/action-checkstyle@v0.6.1
