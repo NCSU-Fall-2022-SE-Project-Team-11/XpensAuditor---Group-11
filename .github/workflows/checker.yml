@@ -8,13 +8,13 @@ on:
 
 jobs:
     checkstyle:
-    name: runner / checkstyle
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Checkstyle for Java
-        uses: dbelyaev/action-checkstyle@v0.6.1
-        with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
-          level: info
+      name: runner / checkstyle
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: Checkstyle for Java
+          uses: dbelyaev/action-checkstyle@v0.6.1
+          with:
+            github_token: ${{ secrets.XPENSAUDITOR_CHECKSTYLE }}
+            reporter: github-pr-review
+            level: info
