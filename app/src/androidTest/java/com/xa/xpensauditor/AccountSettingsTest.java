@@ -8,13 +8,14 @@ import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.action.ViewActions.scrollTo;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
-import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withParent;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
+import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
+
 
 import android.os.SystemClock;
 import android.view.View;
@@ -107,6 +108,7 @@ public class AccountSettingsTest {
                 allOf(withId(androidx.recyclerview.R.id.title), withText("Account Settings"),
                         withParent(withParent(withId(androidx.constraintlayout.widget.R.id.content))),
                         isDisplayed()));
+        
         textView.check(matches(withText("Account Settings")));
 
         ViewInteraction materialTextView = onView(
@@ -124,13 +126,13 @@ public class AccountSettingsTest {
                         withParent(withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class))),
                         isDisplayed()));
         button.check(matches(isDisplayed()));
-
+//Changing password
         ViewInteraction button2 = onView(
                 allOf(withId(R.id.change_password_button), withText("CHANGE PASSWORD"),
                         withParent(withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class))),
                         isDisplayed()));
         button2.check(matches(isDisplayed()));
-
+//sending the password reset mail
         ViewInteraction button3 = onView(
                 allOf(withId(R.id.sending_pass_reset_button), withText("SEND PASSWORD RESET EMAIL"),
                         withParent(withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class))),
