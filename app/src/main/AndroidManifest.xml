@@ -24,10 +24,6 @@
         android:theme="@style/Theme.XpensAuditor"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/lint" q/>
-
         <activity
             android:name=".MonthWiseVis"
             android:exported="false">
