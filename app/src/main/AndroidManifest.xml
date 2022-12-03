@@ -32,6 +32,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".SetLimitActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Visualization_all"
             android:exported="false">
             <meta-data
