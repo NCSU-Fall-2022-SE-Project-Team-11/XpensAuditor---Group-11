@@ -1,42 +1,26 @@
 package com.xa.xpensauditor;
 
-import static com.xa.xpensauditor.AddTransactionActivity.printLog;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import java.lang.ref.Reference;
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.DatePicker;
-import android.util.Log;
-import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.firebase.client.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.auth.FirebaseUser;
-
-import org.w3c.dom.Text;
 
 import java.util.Calendar;
-import java.util.Objects;
-import java.util.List;
-import java.util.ArrayList;
 
 public class SetLimitActivity extends AppCompatActivity {
     private Button setdailylimit, setmonthlylimit, setannuallimit, savebutton, clearbutton, retrievebutton;
@@ -204,6 +188,7 @@ public class SetLimitActivity extends AppCompatActivity {
                 System.out.println("Month-total " + mon_tot);
                 if (mt > Integer.parseInt(sharedPreferences.getString(MLIMIT,"0"))){
                    // Toast.makeText(activity, "TODO - SEND EMAIL TO THE USER AS MONTHLY SET LIMIT IS EXCEEDED ", Toast.LENGTH_SHORT).show();
+                    System.out.println("Email sent for monthly limit updtae");
                     new LimitEmailSender(" You have exceeded the limit set for month.Happy spending!", FirebaseAuth.getInstance().getCurrentUser().getEmail()).execute();
                 }
                 else {
