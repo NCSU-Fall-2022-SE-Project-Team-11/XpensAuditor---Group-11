@@ -1,13 +1,14 @@
 package com.xa.xpensauditor;
+
 import static com.xa.xpensauditor.AddTransactionActivity.printLog;
 
 import android.os.AsyncTask;
+
 import com.mailjet.client.ClientOptions;
 import com.mailjet.client.MailjetClient;
 import com.mailjet.client.MailjetRequest;
 import com.mailjet.client.MailjetResponse;
 import com.mailjet.client.errors.MailjetException;
-import com.mailjet.client.resource.Email;
 import com.mailjet.client.resource.Emailv31;
 
 import org.json.JSONArray;
@@ -20,7 +21,7 @@ public class LimitEmailSender extends AsyncTask<Void, Integer, Boolean> {
     private String amt;
     private String msg;
 
-    public LimitEmailSender(String msg,String email) {
+    public LimitEmailSender(String msg, String email) {
         this.email = email;
         this.msg= msg;
     }
