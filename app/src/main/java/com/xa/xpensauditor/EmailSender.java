@@ -41,6 +41,11 @@ public class EmailSender extends AsyncTask<Void, Integer, Boolean> {
         this.cat = cat;
     }
 
+    /**
+     * sends message to the e-mail ID provided in the constructor.
+     * @param message - The message to be sent.
+     * @return
+     */
     private Boolean sendEmailUpdate(String message) {
         MailjetClient client;
         MailjetRequest request;
