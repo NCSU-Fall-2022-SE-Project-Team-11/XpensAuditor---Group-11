@@ -1,21 +1,24 @@
 package com.xa.xpensauditor;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.*;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.content.*;
+import android.os.*;
+import android.view.*;
+import android.widget.*;
+import android.widget.*;
+import android.widget.*;
 
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
+import com.firebase.client.*;
+import com.firebase.client.*;
+import com.firebase.client.*;
+import com.firebase.client.*;
 
-import java.util.Calendar;
+import java.util.*;
 
+/**
+ * This Class fetches all transaction data from the database for the current user.
+ */
 public class SMSDBFetchActivity extends AppCompatActivity {
 
     TextView smstid,smstamnt,smsshpname,smscat,smsdate,sms, smssharedwith;
@@ -23,6 +26,12 @@ public class SMSDBFetchActivity extends AppCompatActivity {
     private Firebase RefUid;
     private Button btnEdit;
     String d,m,y;
+
+    /**
+     * Loads data when page is created
+     * @param savedInstanceState
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
