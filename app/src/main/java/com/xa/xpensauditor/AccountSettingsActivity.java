@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 /**
- * Controls the account settings options & menus.
+ * Controls the account settings options and menus.
  */
 public class AccountSettingsActivity extends AppCompatActivity {
 
