@@ -65,15 +65,11 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.4.1'
     implementation 'com.mailjet:mailjet-client:5.2.1'
     testImplementation 'junit:junit:4.13.2'
-    //androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha07'
     // AndroidJUnitRunner and JUnit Rules
-    //androidTestImplementation 'com.android.support.test:rules:1.0.2'
-    //androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'androidx.test:runner:1.4.0'
     androidTestImplementation 'androidx.test:core:1.4.0'
     androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.3'
-//    androidTestImplementation 'androidx.test:rules:1.2.0'
     implementation platform('com.google.firebase:firebase-bom:30.4.1')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth:21.0.8'
@@ -121,4 +117,27 @@ task jacocoAllCombinedTestReport(type: JacocoReport, dependsOn: ['testDebugUnitT
     executionData.setFrom(fileTree(dir: project.buildDir, includes: [
             'jacoco/testDebugUnitTest.exec', 'outputs/code_coverage/debugAndroidTest/connected/**/*.ec'
     ]))
+}
+
+android.applicationVariants.all { variant ->
+    task("generate${variant.name.capitalize()}Javadoc", type: Javadoc) {
+        description "Generates Javadoc for $variant.name."
+
+        print "generate javadocs for whatever reason? Somehow this never works"
+
+        //(project.android.sourceSets.main.java.srcDirs also works if you don't care about variants)
+        source = variant.javaCompile.source
+        destinationDir = file("$rootDir/javadoc/")
+        failOnError false
+
+        doFirst {
+            ext.androidJar = "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
+            classpath = files(variant.javaCompile.classpath.files) + files(ext.androidJar) + files('library/mailjet-client-5.2.1.jar')
+
+            options.addStringOption "-show-members", "package"
+            // more doclet options here...
+
+            options.links "https://developer.android.com/reference/"
+        }
+    }
 }
