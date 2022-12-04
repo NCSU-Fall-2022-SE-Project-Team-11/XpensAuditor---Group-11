@@ -10,20 +10,37 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+/**
+ * Manage Transaction viewer in main page
+ */
 public class TransAdapter extends RecyclerView.Adapter<TransAdapter.MyViewHolder2> {
     private List<Transaction> transList;
     private static TransAdapter.ClickListener mClickListener;
 
     private int position;
 
+    /**
+     * Get transaction position
+     * @return
+     */
     public int getPosition(){
         return position;
     }
 
+    /**
+     * Set transaction position
+     * @param position
+     */
     public void setPosition(int position){
         this.position = position;
     }
 
+    /**
+     * Loads data when viewer is loaded
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @Override
     public TransAdapter.MyViewHolder2 onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
@@ -31,6 +48,11 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.MyViewHolder
         return new TransAdapter.MyViewHolder2(itemView);
     }
 
+    /**
+     * Bind the transaction data to views
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(final TransAdapter.MyViewHolder2 holder, int position) {
 
@@ -52,22 +74,35 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.MyViewHolder
 
     }
 
+    /**
+     * Get Item count
+     * @return
+     */
     @Override
     public int getItemCount() {
         return transList.size();
     }
 
+    /**
+     * View is reset when data is not required
+     * @param holder
+     */
     @Override
     public void onViewRecycled(TransAdapter.MyViewHolder2 holder) {
         holder.itemView.setOnLongClickListener(null);
         super.onViewRecycled(holder);
     }
 
-
+    /**
+     * Manage transaction views
+     */
     public class MyViewHolder2 extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener, View.OnCreateContextMenuListener {
         public TextView tid, tamt, tcat,tshopname,tdate,tsharedwith;
 
-
+        /**
+         * Constructor
+         * @param view
+         */
         public MyViewHolder2(View view) {
             super(view);
             view.setOnClickListener(this);
@@ -103,12 +138,18 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.MyViewHolder
         }
     }
 
+    /**
+     * Listener to item click
+     * @param clickListener
+     */
     public void setOnItemClickListener(TransAdapter.ClickListener clickListener){
         TransAdapter.mClickListener = clickListener;
 
     }
 
-
+    /**
+     * An interface to manage clicks
+     */
     public interface ClickListener{
         void OnItemClick(int position, View v);
         void OnItemLongClick(int position, View v);

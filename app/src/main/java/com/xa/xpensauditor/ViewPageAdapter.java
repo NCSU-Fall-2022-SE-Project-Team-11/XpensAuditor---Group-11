@@ -7,6 +7,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Manages two tabs in main page for Categorized and un-Categorized
+ */
 public class ViewPageAdapter extends FragmentPagerAdapter {
 
 
@@ -15,26 +18,48 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
     private final List<Fragment> mFragmentList = new ArrayList<>();
     private final List<String> mFragmentTitleList = new ArrayList<>();
 
-
+    /**
+     * Constructor
+     * @param manager
+     */
     public ViewPageAdapter(FragmentManager manager) {
         super(manager);
     }
 
+    /**
+     * Get item with position
+     * @param position
+     * @return
+     */
     @Override
     public Fragment getItem(int position) {
         return mFragmentList.get(position);
     }
 
+    /**
+     * Get item count
+     * @return
+     */
     @Override
     public int getCount() {
         return mFragmentList.size();
     }
 
+    /**
+     * To add a new fragment to page
+     * @param fragment
+     * @param title
+     */
     public void addFragment(Fragment fragment, String title){
         mFragmentTitleList.add(title);
         mFragmentList.add(fragment);
     }
 
+    /**
+     * Get title of the page
+     * @param position
+     * @return
+     */
     @Override
     public CharSequence getPageTitle(int position) {
         return mFragmentTitleList.get(position);

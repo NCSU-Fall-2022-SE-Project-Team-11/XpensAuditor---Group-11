@@ -10,20 +10,37 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+/**
+ * This activity helps display transactions
+ */
 public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.MyViewHolder> {
     private List<Transaction> transList;
     private static ClickListener mClickListener;
 
     private int position;
 
+    /**
+     * Get transaction position
+     * @return
+     */
     public int getPosition(){
         return position;
     }
 
+    /**
+     * Set transaction position
+     * @param position
+     */
     public void setPosition(int position){
         this.position = position;
     }
 
+    /**
+     * View transaction
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
@@ -31,6 +48,11 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         return new MyViewHolder(itemView);
     }
 
+    /**
+     * Binds transactions to a holder
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
 
@@ -54,22 +76,35 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
 
     }
 
+    /**
+     * Get item count
+     * @return
+     */
     @Override
     public int getItemCount() {
         return transList.size();
     }
 
+    /**
+     * View item on long click
+     * @param holder
+     */
     @Override
     public void onViewRecycled(MyViewHolder holder) {
         holder.itemView.setOnLongClickListener(null);
         super.onViewRecycled(holder);
     }
 
-
+    /**
+     * Holds and shows each transaction
+     */
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener, View.OnCreateContextMenuListener {
         public TextView tid, tamt, tcat,tshopname,tdate,tsharedwith;
 
-
+        /**
+         * Constructor for myViewHolder class
+         * @param view
+         */
         public MyViewHolder(View view) {
             super(view);
             view.setOnClickListener(this);
@@ -84,19 +119,33 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
 
         }
 
-
+        /**
+         * Triggered when button is clicked
+         * @param v
+         */
         @Override
         public void onClick(View v)
         {
             mClickListener.OnItemClick(getAdapterPosition(),v);
         }
 
+        /**
+         * Triggered when button is long clicked
+         * @param v
+         * @return
+         */
         @Override
         public boolean onLongClick(View v){
             mClickListener.OnItemLongClick(getAdapterPosition(),v);
             return false;
         }
 
+        /**
+         * Triggered when menu is created
+         * @param menu
+         * @param v
+         * @param menuInfo
+         */
         @Override
         public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
 
@@ -107,17 +156,27 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         }
     }
 
+    /**
+     * Listener to button click
+     * @param clickListener
+     */
     public void setOnItemClickListener(ClickListener clickListener){
         TransactionAdapter.mClickListener = clickListener;
 
     }
 
-
+    /**
+     * TO define methods and actions for normal and long clicks
+     */
     public interface ClickListener{
         void OnItemClick(int position, View v);
         void OnItemLongClick(int position, View v);
     }
 
+    /**
+     * Constructor
+     * @param transList
+     */
     public TransactionAdapter(List<Transaction> transList) {
         this.transList = transList;
         int i = 0;
