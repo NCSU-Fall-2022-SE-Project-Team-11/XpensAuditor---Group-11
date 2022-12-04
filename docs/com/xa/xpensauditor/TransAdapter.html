@@ -137,6 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">TransAdapter</span>
 extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&gt;</pre>
+<div class="block">Manage Transaction viewer in main page</div>
 </li>
 </ul>
 </div>
@@ -160,12 +161,16 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TransAdapter.ClickListener.html" title="interface in com.xa.xpensauditor">TransAdapter.ClickListener</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">An interface to manage clicks</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Manage transaction views</div>
+</td>
 </tr>
 </table>
 </li>
@@ -209,39 +214,53 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItemCount()">getItemCount</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Get Item count</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPosition()">getPosition</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Get transaction position</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onBindViewHolder(com.xa.xpensauditor.TransAdapter.MyViewHolder2,int)">onBindViewHolder</a></span>&#8203;(<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&nbsp;holder,
                 int&nbsp;position)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Bind the transaction data to views</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCreateViewHolder(android.view.ViewGroup,int)">onCreateViewHolder</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view" class="externalLink">ViewGroup</a>&nbsp;parent,
                   int&nbsp;viewType)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Loads data when viewer is loaded</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onViewRecycled(com.xa.xpensauditor.TransAdapter.MyViewHolder2)">onViewRecycled</a></span>&#8203;(<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&nbsp;holder)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">View is reset when data is not required</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOnItemClickListener(com.xa.xpensauditor.TransAdapter.ClickListener)">setOnItemClickListener</a></span>&#8203;(<a href="TransAdapter.ClickListener.html" title="interface in com.xa.xpensauditor">TransAdapter.ClickListener</a>&nbsp;clickListener)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Listener to item click</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPosition(int)">setPosition</a></span>&#8203;(int&nbsp;position)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Set transaction position</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -300,6 +319,10 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <li class="blockList">
 <h4>getPosition</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getPosition()</pre>
+<div class="block">Get transaction position</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="setPosition(int)">
@@ -309,6 +332,11 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <li class="blockList">
 <h4>setPosition</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setPosition&#8203;(int&nbsp;position)</pre>
+<div class="block">Set transaction position</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>position</code> - </dd>
+</dl>
 </li>
 </ul>
 <a id="onCreateViewHolder(android.view.ViewGroup,int)">
@@ -319,9 +347,14 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <h4>onCreateViewHolder</h4>
 <pre class="methodSignature">public&nbsp;<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&nbsp;onCreateViewHolder&#8203;(<a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view" class="externalLink">ViewGroup</a>&nbsp;parent,
                                                      int&nbsp;viewType)</pre>
+<div class="block">Loads data when viewer is loaded</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>onCreateViewHolder</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>parent</code> - </dd>
+<dd><code>viewType</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
@@ -333,9 +366,13 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <h4>onBindViewHolder</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;onBindViewHolder&#8203;(<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&nbsp;holder,
                              int&nbsp;position)</pre>
+<div class="block">Bind the transaction data to views</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>onBindViewHolder</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>holder</code> - </dd>
+<dd><code>position</code> - </dd>
 </dl>
 </li>
 </ul>
@@ -346,9 +383,11 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <li class="blockList">
 <h4>getItemCount</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getItemCount()</pre>
+<div class="block">Get Item count</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>getItemCount</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
@@ -359,9 +398,12 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <li class="blockList">
 <h4>onViewRecycled</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;onViewRecycled&#8203;(<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&nbsp;holder)</pre>
+<div class="block">View is reset when data is not required</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onViewRecycled</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapter.MyViewHolder2.html" title="class in com.xa.xpensauditor">TransAdapter.MyViewHolder2</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>holder</code> - </dd>
 </dl>
 </li>
 </ul>
@@ -372,6 +414,11 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransAdapt
 <li class="blockList">
 <h4>setOnItemClickListener</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setOnItemClickListener&#8203;(<a href="TransAdapter.ClickListener.html" title="interface in com.xa.xpensauditor">TransAdapter.ClickListener</a>&nbsp;clickListener)</pre>
+<div class="block">Listener to item click</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clickListener</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>
