@@ -90,7 +90,8 @@ public class AccountSettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                startActivity(new Intent(AccountSettingsActivity.this, ProfileManagement.class));
-                Toast.makeText(getApplicationContext(), "To be updated in later versions", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "To be updated in later versions", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(AccountSettingsActivity.this, SetLimitActivity.class));
 
             }
         });
