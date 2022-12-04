@@ -1,1 +1,1 @@
-This directory is for the Chat Channel.
+Screenshots of Chat channel / Discussion forum used for this project.
