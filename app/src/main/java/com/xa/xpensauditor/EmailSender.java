@@ -16,6 +16,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+ * This class is a async task to send emails using the MailJet API. This does
+ * not block the main thread and can be used from the UI. The API is rate-limited to
+ * 500 emails per day.
+ */
 public class EmailSender extends AsyncTask<Void, Integer, Boolean> {
 
     private String email;
