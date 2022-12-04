@@ -148,14 +148,14 @@ public class SetLimitActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot snapshot3 : snapshot.getChildren()) {
                     if (Integer.parseInt(snapshot3.child("Day").getValue().toString()) == (thisDay)) {
-                        String amm = (snapshot3.child("Amount").getValue()).toString();
+                        String amm = (snapshot3.child("Amount").getValue().toString());
                         int am1 = Integer.parseInt(amm);
                         day_tol = am1 + day_tol;
                     }
                 }
 
                 System.out.println("Day-total " + day_tol);
-                if (dt > Integer.parseInt(sharedPreferences.getString(DLIMIT,"0"))){
+                if (day_tol > Integer.parseInt(sharedPreferences.getString(DLIMIT,"0"))){
                     System.out.println("Day limit crossed");
                     //Toast.makeText(activity, "TODO - SEND EMAIL TO THE USER AS DAILY SET LIMIT IS EXCEEDED ", Toast.LENGTH_SHORT).show();
                     new LimitEmailSender("You have exceeded the limit set for the day.Happy spending!", FirebaseAuth.getInstance().getCurrentUser().getEmail()).execute();
