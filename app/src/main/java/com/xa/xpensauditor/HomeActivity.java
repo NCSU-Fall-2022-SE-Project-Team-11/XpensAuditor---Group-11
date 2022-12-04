@@ -55,6 +55,9 @@ import com.xa.xpensauditor.databinding.ActivityHomeBinding;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Main entry point to the app. Represents the landing home page after login.
+ */
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private static final int SMS_PERMISSION_CODE =101;
 
