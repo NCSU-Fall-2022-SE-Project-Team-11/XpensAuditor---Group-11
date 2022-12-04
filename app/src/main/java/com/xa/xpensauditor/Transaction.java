@@ -6,6 +6,10 @@ public class Transaction {
     public Transaction() {
     }
 
+    /**
+     * Constructor for Transaction class
+     * @param obj
+     */
     public Transaction(Transaction obj){
         this.tid = obj.tid;
         this.t_amt = obj.t_amt;
@@ -15,6 +19,17 @@ public class Transaction {
         this.t_msg = obj.t_msg;
         this.t_sharedwith = obj.t_sharedwith;
     }
+
+    /**
+     * Constructor for Transaction class
+     * @param tid
+     * @param t_amt
+     * @param t_cat
+     * @param t_shopname
+     * @param t_date
+     * @param t_msg
+     * @param t_sharedwith
+     */
     public Transaction( String tid, String t_amt, String t_cat,String t_shopname,String t_date, String t_msg, String t_sharedwith) {
         this.tid = tid;
         this.t_amt=t_amt;
@@ -25,30 +40,58 @@ public class Transaction {
         this.t_sharedwith = t_sharedwith;
     }
 
+    /**
+     * Fetches transaction ID
+     * @return
+     */
     public String getTid() {
         return tid;
     }
 
+    /**
+     * Fetches transaction amount
+     * @return
+     */
     public String getT_amt() {
         return t_amt;
     }
 
+    /**
+     * Fetches transaction category
+     * @return
+     */
     public String getT_cat() {
         return t_cat;
     }
 
+    /**
+     * Fetches Shop name
+     * @return
+     */
     public String getT_shopname() {
         return t_shopname;
     }
 
+    /**
+     * Fetches transaction date
+     * @return
+     */
     public String getT_date() {
         return t_date;
     }
 
+    /**
+     * Fetches transaction message
+     * @return
+     */
     public String getT_msg() {
         return t_msg;
     }
 
+    /**
+     * Fetches transaction share list
+     * @return
+     */
     public String getT_sharedwith(){
         int i=0;
         i++;
