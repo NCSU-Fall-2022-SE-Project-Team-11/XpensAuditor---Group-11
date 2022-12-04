@@ -148,21 +148,39 @@ public class SMSReaderActivity extends AppCompatActivity {
                             catgTrans1.put(cat, amount);
                         }
 
+                        /**
+                         * Triggered when a child node in the database is updated or added.
+                         * @param dataSnapshot
+                         * @param s
+                         */
                         @Override
                         public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
                         }
 
+                        /**
+                         * Triggered when a child node in the database is removed.
+                         * @param dataSnapshot
+                         */
                         @Override
                         public void onChildRemoved(DataSnapshot dataSnapshot) {
 
                         }
 
+                        /**
+                         * Triggered when a child node in the database is moved.
+                         * @param dataSnapshot
+                         * @param s
+                         */
                         @Override
                         public void onChildMoved(DataSnapshot dataSnapshot, String s) {
 
                         }
 
+                        /**
+                         * Triggered when there is an error.
+                         * @param firebaseError
+                         */
                         @Override
                         public void onCancelled(FirebaseError firebaseError) {
 
