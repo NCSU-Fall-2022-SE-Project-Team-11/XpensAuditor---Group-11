@@ -13,6 +13,9 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * Show Categorised and un Categorised transactions in main menu.
+ */
 public class SMSTransacShowActivity extends AppCompatActivity {
 
     TextView smstid,smstamnt,smsshpname,smscat,smsdate,sms,smssharedwith;
@@ -44,11 +47,20 @@ public class SMSTransacShowActivity extends AppCompatActivity {
         RefUid= mRootRef.child(Uid);
 
         RefUid.child("UnCatTran").child(tid).child("Amount").addValueEventListener(new ValueEventListener() {
+
+            /**
+             * Method is triggered when data is changed or added.
+             * @param dataSnapshot
+             */
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 smstamnt.setText(dataSnapshot.getValue().toString().trim());
             }
 
+            /**
+             * Method is triggered when there is a Firebase error.
+             * @param firebaseError
+             */
             @Override
             public void onCancelled(FirebaseError firebaseError) {
 
