@@ -107,6 +107,11 @@ public class EmailSender extends AsyncTask<Void, Integer, Boolean> {
         return true;
     }
 
+    /**
+     * Override for the default task related setup.
+     * @param voids - Leave empty. No inputs expected beyond creation of the object.
+     * @return - Returns the status of the email after the execution of the task.
+     */
     @Override
     protected Boolean doInBackground(Void... voids) {
         int i=0;
