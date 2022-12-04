@@ -15,6 +15,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+ * Utility task class for sending email notification when transaction limits are hit.
+ */
 public class LimitEmailSender extends AsyncTask<Void, Integer, Boolean> {
 
     private String email;

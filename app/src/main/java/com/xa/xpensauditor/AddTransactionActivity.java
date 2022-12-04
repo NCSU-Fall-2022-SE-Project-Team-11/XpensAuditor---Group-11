@@ -39,6 +39,9 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 
+/**
+ * Add transaction and upload to Firebase + display controller.
+ */
 public class AddTransactionActivity extends AppCompatActivity {
 
     private Firebase mRootRef;

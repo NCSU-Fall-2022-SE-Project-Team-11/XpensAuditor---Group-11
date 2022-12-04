@@ -17,6 +17,9 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+/**
+ * Landing screen view of the application. Handles login related activites and sets the Firebase instance up.
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private EditText inputEmail, inputPassword;
