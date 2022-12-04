@@ -1,20 +1,20 @@
 package com.xa.xpensauditor;
 
-import androidx.appcompat.app.*;
+import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.*;
-import android.os.*;
-import android.view.*;
-import android.widget.*;
-import android.widget.*;
-import android.widget.*;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import com.firebase.client.*;
-import com.firebase.client.*;
-import com.firebase.client.*;
-import com.firebase.client.*;
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 
-import java.util.*;
+import java.util.Calendar;
 
 /**
  * This Class fetches all transaction data from the database for the current user.
