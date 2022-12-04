@@ -28,6 +28,12 @@ public class EmailSender extends AsyncTask<Void, Integer, Boolean> {
     private String shop;
     private String cat;
 
+    /**
+     * @param email - The email id of the receiver
+     * @param amt - The amount of the transaction
+     * @param shop - The shop where the transaction occurred
+     * @param cat - The category of the transaction
+     */
     public EmailSender(String email, String amt, String shop, String cat) {
         this.email = email;
         this.amt = amt;
