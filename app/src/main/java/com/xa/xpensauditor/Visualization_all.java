@@ -8,10 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/**
+ * Activity to visualize user spending
+ */
 public class Visualization_all extends AppCompatActivity {
     EditText mEdit;
     EditText mEdit1,mEdit2,mEdit3,mEdit4,mEdit5;
     private Button Vis,Vis1;
+
+    /**
+     * Loads data when page is created
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +28,10 @@ public class Visualization_all extends AppCompatActivity {
                 Vis = (Button) findViewById(R.id.button2);
         Vis1 = (Button) findViewById(R.id.button5);
         Vis.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Triggered when button is clicked
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 Intent c=new Intent(Visualization_all.this,Day_wise_visualization.class);
