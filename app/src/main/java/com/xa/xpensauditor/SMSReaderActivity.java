@@ -30,6 +30,9 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * This activity reads SMS to add transaction in the application.
+ */
 public class SMSReaderActivity extends AppCompatActivity {
     String strDate,epochDate, shopName = "Unknown", smsMessagestr = "Couldn't fetch";
     long year, day, month;
@@ -41,7 +44,10 @@ public class SMSReaderActivity extends AppCompatActivity {
     boolean flsh = false, flamt = false, fldate = false;
     MultiValueMap<String, String> catgTrans1 = MultiValueMap.multiValueMap(new LinkedHashMap<String, Collection<String>>(), (Class<LinkedHashSet<String>>) (Class<?>) LinkedHashSet.class);
 
-
+    /**
+     * Loads data when page is created.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
