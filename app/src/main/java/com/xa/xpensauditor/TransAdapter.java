@@ -74,22 +74,35 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.MyViewHolder
 
     }
 
+    /**
+     * Get Item count
+     * @return
+     */
     @Override
     public int getItemCount() {
         return transList.size();
     }
 
+    /**
+     * View is reset when data is not required
+     * @param holder
+     */
     @Override
     public void onViewRecycled(TransAdapter.MyViewHolder2 holder) {
         holder.itemView.setOnLongClickListener(null);
         super.onViewRecycled(holder);
     }
 
-
+    /**
+     * Manage transaction views
+     */
     public class MyViewHolder2 extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener, View.OnCreateContextMenuListener {
         public TextView tid, tamt, tcat,tshopname,tdate,tsharedwith;
 
-
+        /**
+         * Constructor
+         * @param view
+         */
         public MyViewHolder2(View view) {
             super(view);
             view.setOnClickListener(this);
@@ -125,12 +138,18 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.MyViewHolder
         }
     }
 
+    /**
+     * Listener to item click
+     * @param clickListener
+     */
     public void setOnItemClickListener(TransAdapter.ClickListener clickListener){
         TransAdapter.mClickListener = clickListener;
 
     }
 
-
+    /**
+     * An interface to manage clicks
+     */
     public interface ClickListener{
         void OnItemClick(int position, View v);
         void OnItemLongClick(int position, View v);
