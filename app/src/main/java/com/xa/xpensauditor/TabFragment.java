@@ -66,7 +66,13 @@ public class TabFragment extends Fragment {
         // Required empty public constructor
     }
 
-
+    /**
+     * Loads data when fragment is loaded
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -75,6 +81,11 @@ public class TabFragment extends Fragment {
 
     }
 
+    /**
+     * Loads data when view is created.
+     * @param view
+     * @param savedInstanceState
+     */
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -97,6 +108,11 @@ public class TabFragment extends Fragment {
         arrayAdapterTF=new ArrayAdapter<String>(view.getContext(),android.R.layout.simple_list_item_1,CatgTF);
 
         RefCat.addChildEventListener(new ChildEventListener() {
+            /**
+             * Triggered when a child node is added.
+             * @param dataSnapshot
+             * @param s
+             */
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 String value= dataSnapshot.getKey().trim();
@@ -104,21 +120,39 @@ public class TabFragment extends Fragment {
                 arrayAdapterTF.notifyDataSetChanged();
             }
 
+            /**
+             * Triggered when a child node in the database is updated or added.
+             * @param dataSnapshot
+             * @param s
+             */
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
             }
 
+            /**
+             * Triggered when a child node in the database is removed.
+             * @param dataSnapshot
+             */
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
 
             }
 
+            /**
+             * Triggered when a child node in the database is moved.
+             * @param dataSnapshot
+             * @param s
+             */
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String s) {
 
             }
 
+            /**
+             * Handles any firebase related errors in the program
+             * @param firebaseError
+             */
             @Override
             public void onCancelled(FirebaseError firebaseError) {
 
@@ -139,6 +173,11 @@ public class TabFragment extends Fragment {
         registerForContextMenu(recyclerView);
 
         mAdapter1.setOnItemClickListener(new TransAdapter.ClickListener() {
+            /**
+             * When a transaction is clicked, it shows the details of the transaction.
+             * @param position
+             * @param v
+             */
             @Override
             public void OnItemClick(int position, View v) {
 
@@ -147,6 +186,11 @@ public class TabFragment extends Fragment {
                 startActivity(i);
             }
 
+            /**
+             * On a long clock, view position of the transaction in the Fragment.
+             * @param position
+             * @param v
+             */
             @Override
             public void OnItemLongClick(int position, View v) {
                 Log.i("yoyoyo","Here: "+position);

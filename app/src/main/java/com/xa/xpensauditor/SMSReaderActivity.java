@@ -129,6 +129,12 @@ public class SMSReaderActivity extends AppCompatActivity {
                     RefTran1 = RefUid.child("DateRange").child(String.valueOf(mm+"-"+yyyy)).child("Transactions");
                     RefTran1.addChildEventListener(new com.firebase.client.ChildEventListener() {
                         String amount, cat;
+
+                        /**
+                         * Triggered when a child node is added.
+                         * @param dataSnapshot
+                         * @param s
+                         */
                         @Override
                         public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                             int i = 0;
