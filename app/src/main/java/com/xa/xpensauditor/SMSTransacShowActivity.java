@@ -22,6 +22,11 @@ public class SMSTransacShowActivity extends AppCompatActivity {
     private Firebase mRootRef;
     private Firebase RefUid;
     String d,m,y;
+
+    /**
+     * Loads data when page is created
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -18,10 +18,18 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * This class is used to handle user suggestions.
+ */
 public class Suggest extends AppCompatActivity implements View.OnClickListener{
 
     EditText e;
     Button b;
+
+    /**
+     * Loads data when page is created
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
