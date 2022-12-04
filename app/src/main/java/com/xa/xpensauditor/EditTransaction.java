@@ -34,6 +34,9 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+/**
+ * View page for edit transaction + backend to manage database history of modified transactions.
+ */
 public class EditTransaction extends AppCompatActivity{
     private TextInputEditText transactionAmt;
     private TextInputEditText shopName;

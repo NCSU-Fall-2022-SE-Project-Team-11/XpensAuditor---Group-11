@@ -41,6 +41,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * Visualisation class for showing the spending pattern in graphs.
+ */
 public class Day_wise_visualization extends AppCompatActivity {
     private Firebase mRootRef;
     private Firebase RefUid,RefTran,RefUid1;

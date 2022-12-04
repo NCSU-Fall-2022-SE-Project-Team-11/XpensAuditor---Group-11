@@ -38,20 +38,10 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
-import java.util.UUID;
 
-// add mailjet libraries for sending emails etc.
-import com.mailjet.*;
-import com.mailjet.client.MailjetClient;
-import com.mailjet.client.MailjetRequest;
-import com.mailjet.client.MailjetResponse;
-import com.mailjet.client.ClientOptions;
-import com.mailjet.client.errors.MailjetException;
-import com.mailjet.client.resource.Emailv31;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
+/**
+ * Add transaction and upload to Firebase + display controller.
+ */
 public class AddTransactionActivity extends AppCompatActivity {
 
     private Firebase mRootRef;

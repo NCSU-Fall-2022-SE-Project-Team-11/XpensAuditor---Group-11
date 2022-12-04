@@ -13,6 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.firebase.client.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * Controller for the profile editor class.
+ */
 public class EditProfileActivity extends AppCompatActivity {
 
     DatePicker dob;
