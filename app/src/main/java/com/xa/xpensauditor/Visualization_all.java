@@ -52,6 +52,10 @@ public class Visualization_all extends AppCompatActivity {
 
         });
         Vis1.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Triggered when button is clicked
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 Intent c=new Intent(Visualization_all.this,MonthWiseVis.class);
