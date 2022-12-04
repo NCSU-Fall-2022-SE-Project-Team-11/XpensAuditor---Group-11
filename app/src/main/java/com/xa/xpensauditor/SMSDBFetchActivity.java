@@ -31,7 +31,6 @@ public class SMSDBFetchActivity extends AppCompatActivity {
      * Loads data when page is created
      * @param savedInstanceState
      */
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -183,6 +182,11 @@ public class SMSDBFetchActivity extends AppCompatActivity {
         });
 
         RefUid.child("DateRange").child(month+"-"+year).child("Transactions").child(tid).child("Year").addValueEventListener(new ValueEventListener() {
+
+            /**
+             * Triggered when there is a change in data.
+             * @param dataSnapshot
+             */
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 try{
@@ -1214,6 +1218,10 @@ public class SMSDBFetchActivity extends AppCompatActivity {
                 }
             }
 
+            /**
+             * Handles any firebase related errors in the program
+             * @param firebaseError
+             */
             @Override
             public void onCancelled(FirebaseError firebaseError) {
 
@@ -1221,6 +1229,11 @@ public class SMSDBFetchActivity extends AppCompatActivity {
         });
 
         btnEdit.setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * On a button click, calls EditTransaction activity
+             * @param view
+             */
             @Override
             public void onClick(View view) {
 
