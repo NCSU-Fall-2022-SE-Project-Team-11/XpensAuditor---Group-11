@@ -146,6 +146,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">TransactionAdapter.MyViewHolder</span>
 extends androidx.recyclerview.widget.RecyclerView.ViewHolder
 implements <a href="https://developer.android.com/reference/android/view/View.OnClickListener.html?is-external=true" title="class or interface in android.view" class="externalLink">View.OnClickListener</a>, <a href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html?is-external=true" title="class or interface in android.view" class="externalLink">View.OnLongClickListener</a>, <a href="https://developer.android.com/reference/android/view/View.OnCreateContextMenuListener.html?is-external=true" title="class or interface in android.view" class="externalLink">View.OnCreateContextMenuListener</a></pre>
+<div class="block">Holds and shows each transaction</div>
 </li>
 </ul>
 </div>
@@ -222,7 +223,9 @@ implements <a href="https://developer.android.com/reference/android/view/View.On
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(android.view.View)">MyViewHolder</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;view)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Constructor for myViewHolder class</div>
+</td>
 </tr>
 </table>
 </li>
@@ -245,19 +248,25 @@ implements <a href="https://developer.android.com/reference/android/view/View.On
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onClick(android.view.View)">onClick</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;v)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Triggered when button is clicked</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu.ContextMenuInfo)">onCreateContextMenu</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/ContextMenu.html?is-external=true" title="class or interface in android.view" class="externalLink">ContextMenu</a>&nbsp;menu,
                    <a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;v,
                    <a href="https://developer.android.com/reference/android/view/ContextMenu.ContextMenuInfo.html?is-external=true" title="class or interface in android.view" class="externalLink">ContextMenu.ContextMenuInfo</a>&nbsp;menuInfo)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Triggered when menu is created</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onLongClick(android.view.View)">onLongClick</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;v)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Triggered when button is long clicked</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -361,6 +370,11 @@ implements <a href="https://developer.android.com/reference/android/view/View.On
 <li class="blockList">
 <h4>MyViewHolder</h4>
 <pre>public&nbsp;MyViewHolder&#8203;(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;view)</pre>
+<div class="block">Constructor for myViewHolder class</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>view</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -380,9 +394,12 @@ implements <a href="https://developer.android.com/reference/android/view/View.On
 <li class="blockList">
 <h4>onClick</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;onClick&#8203;(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;v)</pre>
+<div class="block">Triggered when button is clicked</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/android/view/View.OnClickListener.html?is-external=true#onClick(android.view.View)" title="class or interface in android.view" class="externalLink">onClick</a></code>&nbsp;in interface&nbsp;<code><a href="https://developer.android.com/reference/android/view/View.OnClickListener.html?is-external=true" title="class or interface in android.view" class="externalLink">View.OnClickListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>v</code> - </dd>
 </dl>
 </li>
 </ul>
@@ -393,9 +410,13 @@ implements <a href="https://developer.android.com/reference/android/view/View.On
 <li class="blockList">
 <h4>onLongClick</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;onLongClick&#8203;(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;v)</pre>
+<div class="block">Triggered when button is long clicked</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html?is-external=true#onLongClick(android.view.View)" title="class or interface in android.view" class="externalLink">onLongClick</a></code>&nbsp;in interface&nbsp;<code><a href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html?is-external=true" title="class or interface in android.view" class="externalLink">View.OnLongClickListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>v</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
@@ -408,9 +429,14 @@ implements <a href="https://developer.android.com/reference/android/view/View.On
 <pre class="methodSignature">public&nbsp;void&nbsp;onCreateContextMenu&#8203;(<a href="https://developer.android.com/reference/android/view/ContextMenu.html?is-external=true" title="class or interface in android.view" class="externalLink">ContextMenu</a>&nbsp;menu,
                                 <a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;v,
                                 <a href="https://developer.android.com/reference/android/view/ContextMenu.ContextMenuInfo.html?is-external=true" title="class or interface in android.view" class="externalLink">ContextMenu.ContextMenuInfo</a>&nbsp;menuInfo)</pre>
+<div class="block">Triggered when menu is created</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/android/view/View.OnCreateContextMenuListener.html?is-external=true#onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu.ContextMenuInfo)" title="class or interface in android.view" class="externalLink">onCreateContextMenu</a></code>&nbsp;in interface&nbsp;<code><a href="https://developer.android.com/reference/android/view/View.OnCreateContextMenuListener.html?is-external=true" title="class or interface in android.view" class="externalLink">View.OnCreateContextMenuListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>menu</code> - </dd>
+<dd><code>v</code> - </dd>
+<dd><code>menuInfo</code> - </dd>
 </dl>
 </li>
 </ul>
