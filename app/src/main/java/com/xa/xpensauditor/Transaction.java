@@ -1117,26 +1117,50 @@ public class Transaction {
         return t_sharedwith;
     }
 
+    /**
+     * Set Transaction date
+     * @param t_date
+     */
     public void setT_date(String t_date) {
         this.t_date = t_date;
     }
 
+    /**
+     * Set Transaction amount
+     * @param t_amt
+     */
     public void setT_amt(String t_amt) {
         this.t_amt = t_amt;
     }
 
+    /**
+     * Set Transaction category
+     * @param t_cat
+     */
     public void setT_cat(String t_cat) {
         this.t_cat = t_cat;
     }
 
+    /**
+     * Set Shop name
+     * @param t_shopname
+     */
     public void setT_shopname(String t_shopname) {
         this.t_shopname = t_shopname;
     }
 
+    /**
+     * Set transaction message
+     * @param t_msg
+     */
     public void setT_msg(String t_msg) {
         this.t_msg = t_msg;
     }
 
+    /**
+     * Set share list
+     * @param t_sharedwith
+     */
     public void setT_sharedwith(String t_sharedwith){
         this.t_sharedwith = t_sharedwith;
     }
