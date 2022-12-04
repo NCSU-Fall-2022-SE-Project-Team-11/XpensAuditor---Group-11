@@ -16,6 +16,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+ * This class is a async task to send emails using the MailJet API. This does
+ * not block the main thread and can be used from the UI. The API is rate-limited to
+ * 500 emails per day.
+ */
 public class EmailSender extends AsyncTask<Void, Integer, Boolean> {
 
     private String email;
@@ -23,6 +28,12 @@ public class EmailSender extends AsyncTask<Void, Integer, Boolean> {
     private String shop;
     private String cat;
 
+    /**
+     * @param email - The email id of the receiver
+     * @param amt - The amount of the transaction
+     * @param shop - The shop where the transaction occurred
+     * @param cat - The category of the transaction
+     */
     public EmailSender(String email, String amt, String shop, String cat) {
         this.email = email;
         this.amt = amt;
@@ -30,6 +41,11 @@ public class EmailSender extends AsyncTask<Void, Integer, Boolean> {
         this.cat = cat;
     }
 
+    /**
+     * sends message to the e-mail ID provided in the constructor.
+     * @param message - The message to be sent.
+     * @return
+     */
     private Boolean sendEmailUpdate(String message) {
         MailjetClient client;
         MailjetRequest request;
@@ -91,6 +107,11 @@ public class EmailSender extends AsyncTask<Void, Integer, Boolean> {
         return true;
     }
 
+    /**
+     * Override for the default task related setup.
+     * @param voids - Leave empty. No inputs expected beyond creation of the object.
+     * @return - Returns the status of the email after the execution of the task.
+     */
     @Override
     protected Boolean doInBackground(Void... voids) {
         int i=0;
