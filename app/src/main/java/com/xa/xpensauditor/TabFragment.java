@@ -33,6 +33,9 @@ import java.util.List;
 import java.text.DateFormatSymbols;
 import java.util.Locale;
 
+/**
+ * Handles fragments in the main menu, to view transactions.
+ */
 public class TabFragment extends Fragment {
     private Firebase mRootRef;
     private Firebase RefUid,RefTran, RefCat, RefCatTran;
@@ -47,6 +50,11 @@ public class TabFragment extends Fragment {
     private RecyclerView recyclerView;
     private TransAdapter mAdapter1;
 
+    /**
+     * Handles Fragments and transcation in the main page based on the position
+     * @param position
+     * @return tabFragment
+     */
     public static Fragment getInstance(int position) {
         Bundle bundle = new Bundle();
         bundle.putInt("pos1", position);
