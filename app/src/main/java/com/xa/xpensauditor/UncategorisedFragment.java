@@ -1193,6 +1193,11 @@ public class UncategorisedFragment extends Fragment {
 
     }
 
+    /**
+     * Triggered when an item is clicked
+     * @param item
+     * @return
+     */
     @Override
     public boolean onContextItemSelected(MenuItem item) {
 
@@ -1306,7 +1311,9 @@ public class UncategorisedFragment extends Fragment {
         return super.onContextItemSelected(item);
     }
 
-
+    /**
+     * Add transaction data
+     */
     private void prepareTransactionData() {
         RefTran.addChildEventListener(new ChildEventListener() {
             String amount,cat,shname,shDay,shMonth,shYear,shMsg, sharedWith;
