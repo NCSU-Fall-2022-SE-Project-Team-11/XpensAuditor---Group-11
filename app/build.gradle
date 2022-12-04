@@ -123,11 +123,8 @@ android.applicationVariants.all { variant ->
     task("generate${variant.name.capitalize()}Javadoc", type: Javadoc) {
         description "Generates Javadoc for $variant.name."
 
-        print "generate javadocs for whatever reason? Somehow this never works"
-
-        //(project.android.sourceSets.main.java.srcDirs also works if you don't care about variants)
         source = variant.javaCompile.source
-        destinationDir = file("$rootDir/javadoc/")
+        destinationDir = file("$rootDir/docs/")
         failOnError false
 
         doFirst {

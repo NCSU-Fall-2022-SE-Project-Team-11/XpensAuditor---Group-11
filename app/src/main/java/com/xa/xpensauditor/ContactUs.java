@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+/**
+ * Display menu backed for reaching out to the dev team from the navbar options.
+ */
 public class ContactUs extends AppCompatActivity implements View.OnClickListener{
 
 //    Button Email;
