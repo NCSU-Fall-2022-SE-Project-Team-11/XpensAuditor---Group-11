@@ -10,20 +10,37 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+/**
+ * This activity helps display transactions
+ */
 public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.MyViewHolder> {
     private List<Transaction> transList;
     private static ClickListener mClickListener;
 
     private int position;
 
+    /**
+     * Get transaction position
+     * @return
+     */
     public int getPosition(){
         return position;
     }
 
+    /**
+     * Set transaction position
+     * @param position
+     */
     public void setPosition(int position){
         this.position = position;
     }
 
+    /**
+     * View transaction
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
@@ -31,6 +48,11 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         return new MyViewHolder(itemView);
     }
 
+    /**
+     * Binds transactions to a holder
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
 
@@ -54,6 +76,10 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
 
     }
 
+    /**
+     * Get item count
+     * @return
+     */
     @Override
     public int getItemCount() {
         return transList.size();
