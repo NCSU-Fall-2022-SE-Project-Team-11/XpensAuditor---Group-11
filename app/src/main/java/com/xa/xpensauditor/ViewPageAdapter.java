@@ -45,11 +45,21 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
         return mFragmentList.size();
     }
 
+    /**
+     * To add a new fragment to page
+     * @param fragment
+     * @param title
+     */
     public void addFragment(Fragment fragment, String title){
         mFragmentTitleList.add(title);
         mFragmentList.add(fragment);
     }
 
+    /**
+     * Get title of the page
+     * @param position
+     * @return
+     */
     @Override
     public CharSequence getPageTitle(int position) {
         return mFragmentTitleList.get(position);
