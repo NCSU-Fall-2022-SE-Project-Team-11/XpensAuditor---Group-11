@@ -19,7 +19,6 @@ import org.json.JSONObject;
  * Utility task class for sending email notification when transaction limits are hit.
  */
 public class LimitEmailSender extends AsyncTask<Void, Integer, Boolean> {
-
     private String email;
     private String amt;
     private String msg;
@@ -27,6 +26,7 @@ public class LimitEmailSender extends AsyncTask<Void, Integer, Boolean> {
     public LimitEmailSender(String msg, String email) {
         this.email = email;
         this.msg= msg;
+        
     }
 
 
@@ -85,7 +85,7 @@ public class LimitEmailSender extends AsyncTask<Void, Integer, Boolean> {
         }
         printLog("email response status : " + response.getStatus());
 
-        printLog("email response data : " + response.getData());
+       printLog("email response data : " + response.getData());
 
         return true;
     }

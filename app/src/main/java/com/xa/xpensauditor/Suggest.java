@@ -18,10 +18,18 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * This class is used to handle user suggestions.
+ */
 public class Suggest extends AppCompatActivity implements View.OnClickListener{
 
     EditText e;
     Button b;
+
+    /**
+     * Loads data when page is created
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +47,10 @@ public class Suggest extends AppCompatActivity implements View.OnClickListener{
         e=(EditText)findViewById(R.id.editText5);
         b=(Button)findViewById(R.id.button3);
         b.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Triggered when button is clicked. Takes user ratings and suggestions.
+             * @param v
+             */
             public void onClick(View v) {
                 RefSuggestion.addListenerForSingleValueEvent(new ValueEventListener() {
                     public void onDataChange(DataSnapshot DS) {
@@ -72,6 +84,10 @@ public class Suggest extends AppCompatActivity implements View.OnClickListener{
                         }
                     }
 
+                    /**
+                     * Method is triggered when there is a Firebase error.
+                     * @param firebaseError
+                     */
                     public void onCancelled(FirebaseError firebaseError) {
 
                     }
@@ -81,6 +97,10 @@ public class Suggest extends AppCompatActivity implements View.OnClickListener{
         });
         }
 
+    /**
+     * Triggered when button is clicked.
+     * @param view
+     */
     @Override
     public void onClick(View view) {
 

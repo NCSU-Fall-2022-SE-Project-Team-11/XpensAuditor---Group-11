@@ -141,6 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">UncategorisedFragment</span>
 extends androidx.fragment.app.Fragment</pre>
+<div class="block">Manages uncategorized transactions of the user</div>
 </li>
 </ul>
 </div>
@@ -224,7 +225,9 @@ extends androidx.fragment.app.Fragment</pre>
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">UncategorisedFragment</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Constructor</div>
+</td>
 </tr>
 </table>
 </li>
@@ -247,25 +250,33 @@ extends androidx.fragment.app.Fragment</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static androidx.fragment.app.Fragment</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInstance(int)">getInstance</a></span>&#8203;(int&nbsp;position)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Handles Fragments and transcation in the main page based on the position</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onContextItemSelected(android.view.MenuItem)">onContextItemSelected</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/MenuItem.html?is-external=true" title="class or interface in android.view" class="externalLink">MenuItem</a>&nbsp;item)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Triggered when an item is clicked</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)">onCreateView</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/LayoutInflater.html?is-external=true" title="class or interface in android.view" class="externalLink">LayoutInflater</a>&nbsp;inflater,
             <a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view" class="externalLink">ViewGroup</a>&nbsp;container,
             <a href="https://developer.android.com/reference/android/os/Bundle.html?is-external=true" title="class or interface in android.os" class="externalLink">Bundle</a>&nbsp;savedInstanceState)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Loads data when fragment is loaded</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onViewCreated(android.view.View,android.os.Bundle)">onViewCreated</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;view,
              <a href="https://developer.android.com/reference/android/os/Bundle.html?is-external=true" title="class or interface in android.os" class="externalLink">Bundle</a>&nbsp;savedInstanceState)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Loads data when view is created.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -358,6 +369,7 @@ extends androidx.fragment.app.Fragment</pre>
 <li class="blockList">
 <h4>UncategorisedFragment</h4>
 <pre>public&nbsp;UncategorisedFragment()</pre>
+<div class="block">Constructor</div>
 </li>
 </ul>
 </li>
@@ -377,6 +389,12 @@ extends androidx.fragment.app.Fragment</pre>
 <li class="blockList">
 <h4>getInstance</h4>
 <pre class="methodSignature">public static&nbsp;androidx.fragment.app.Fragment&nbsp;getInstance&#8203;(int&nbsp;position)</pre>
+<div class="block">Handles Fragments and transcation in the main page based on the position</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>position</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)">
@@ -388,9 +406,15 @@ extends androidx.fragment.app.Fragment</pre>
 <pre class="methodSignature">public&nbsp;<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;onCreateView&#8203;(<a href="https://developer.android.com/reference/android/view/LayoutInflater.html?is-external=true" title="class or interface in android.view" class="externalLink">LayoutInflater</a>&nbsp;inflater,
                          <a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view" class="externalLink">ViewGroup</a>&nbsp;container,
                          <a href="https://developer.android.com/reference/android/os/Bundle.html?is-external=true" title="class or interface in android.os" class="externalLink">Bundle</a>&nbsp;savedInstanceState)</pre>
+<div class="block">Loads data when fragment is loaded</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onCreateView</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inflater</code> - </dd>
+<dd><code>container</code> - </dd>
+<dd><code>savedInstanceState</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
@@ -403,9 +427,13 @@ extends androidx.fragment.app.Fragment</pre>
 <pre class="methodSignature">public&nbsp;void&nbsp;onViewCreated&#8203;(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view" class="externalLink">View</a>&nbsp;view,
                           @Nullable
                           <a href="https://developer.android.com/reference/android/os/Bundle.html?is-external=true" title="class or interface in android.os" class="externalLink">Bundle</a>&nbsp;savedInstanceState)</pre>
+<div class="block">Loads data when view is created.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onViewCreated</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>view</code> - </dd>
+<dd><code>savedInstanceState</code> - </dd>
 </dl>
 </li>
 </ul>
@@ -416,9 +444,13 @@ extends androidx.fragment.app.Fragment</pre>
 <li class="blockList">
 <h4>onContextItemSelected</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;onContextItemSelected&#8203;(<a href="https://developer.android.com/reference/android/view/MenuItem.html?is-external=true" title="class or interface in android.view" class="externalLink">MenuItem</a>&nbsp;item)</pre>
+<div class="block">Triggered when an item is clicked</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onContextItemSelected</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>item</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>

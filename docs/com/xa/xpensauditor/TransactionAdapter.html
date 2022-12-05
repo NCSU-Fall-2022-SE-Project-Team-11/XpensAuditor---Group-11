@@ -137,6 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">TransactionAdapter</span>
 extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&gt;</pre>
+<div class="block">This activity helps display transactions</div>
 </li>
 </ul>
 </div>
@@ -160,12 +161,16 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TransactionAdapter.ClickListener.html" title="interface in com.xa.xpensauditor">TransactionAdapter.ClickListener</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">TO define methods and actions for normal and long clicks</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Holds and shows each transaction</div>
+</td>
 </tr>
 </table>
 </li>
@@ -186,7 +191,9 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.util.List)">TransactionAdapter</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="Transaction.html" title="class in com.xa.xpensauditor">Transaction</a>&gt;&nbsp;transList)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Constructor</div>
+</td>
 </tr>
 </table>
 </li>
@@ -209,39 +216,53 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItemCount()">getItemCount</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Get item count</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPosition()">getPosition</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Get transaction position</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onBindViewHolder(com.xa.xpensauditor.TransactionAdapter.MyViewHolder,int)">onBindViewHolder</a></span>&#8203;(<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&nbsp;holder,
                 int&nbsp;position)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Binds transactions to a holder</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCreateViewHolder(android.view.ViewGroup,int)">onCreateViewHolder</a></span>&#8203;(<a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view" class="externalLink">ViewGroup</a>&nbsp;parent,
                   int&nbsp;viewType)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">View transaction</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onViewRecycled(com.xa.xpensauditor.TransactionAdapter.MyViewHolder)">onViewRecycled</a></span>&#8203;(<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&nbsp;holder)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">View item on long click</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOnItemClickListener(com.xa.xpensauditor.TransactionAdapter.ClickListener)">setOnItemClickListener</a></span>&#8203;(<a href="TransactionAdapter.ClickListener.html" title="interface in com.xa.xpensauditor">TransactionAdapter.ClickListener</a>&nbsp;clickListener)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Listener to button click</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPosition(int)">setPosition</a></span>&#8203;(int&nbsp;position)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Set transaction position</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -281,6 +302,11 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <li class="blockList">
 <h4>TransactionAdapter</h4>
 <pre>public&nbsp;TransactionAdapter&#8203;(<a href="https://developer.android.com/reference/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="Transaction.html" title="class in com.xa.xpensauditor">Transaction</a>&gt;&nbsp;transList)</pre>
+<div class="block">Constructor</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>transList</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -300,6 +326,10 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <li class="blockList">
 <h4>getPosition</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getPosition()</pre>
+<div class="block">Get transaction position</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="setPosition(int)">
@@ -309,6 +339,11 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <li class="blockList">
 <h4>setPosition</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setPosition&#8203;(int&nbsp;position)</pre>
+<div class="block">Set transaction position</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>position</code> - </dd>
+</dl>
 </li>
 </ul>
 <a id="onCreateViewHolder(android.view.ViewGroup,int)">
@@ -319,9 +354,14 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <h4>onCreateViewHolder</h4>
 <pre class="methodSignature">public&nbsp;<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&nbsp;onCreateViewHolder&#8203;(<a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view" class="externalLink">ViewGroup</a>&nbsp;parent,
                                                           int&nbsp;viewType)</pre>
+<div class="block">View transaction</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>onCreateViewHolder</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>parent</code> - </dd>
+<dd><code>viewType</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
@@ -333,9 +373,13 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <h4>onBindViewHolder</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;onBindViewHolder&#8203;(<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&nbsp;holder,
                              int&nbsp;position)</pre>
+<div class="block">Binds transactions to a holder</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>onBindViewHolder</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>holder</code> - </dd>
+<dd><code>position</code> - </dd>
 </dl>
 </li>
 </ul>
@@ -346,9 +390,11 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <li class="blockList">
 <h4>getItemCount</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getItemCount()</pre>
+<div class="block">Get item count</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>getItemCount</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
@@ -359,9 +405,12 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <li class="blockList">
 <h4>onViewRecycled</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;onViewRecycled&#8203;(<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&nbsp;holder)</pre>
+<div class="block">View item on long click</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onViewRecycled</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="TransactionAdapter.MyViewHolder.html" title="class in com.xa.xpensauditor">TransactionAdapter.MyViewHolder</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>holder</code> - </dd>
 </dl>
 </li>
 </ul>
@@ -372,6 +421,11 @@ extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="Transactio
 <li class="blockList">
 <h4>setOnItemClickListener</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setOnItemClickListener&#8203;(<a href="TransactionAdapter.ClickListener.html" title="interface in com.xa.xpensauditor">TransactionAdapter.ClickListener</a>&nbsp;clickListener)</pre>
+<div class="block">Listener to button click</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clickListener</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>

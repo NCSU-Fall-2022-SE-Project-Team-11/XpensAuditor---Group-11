@@ -44,13 +44,6 @@ public class SetLimitActivity extends AppCompatActivity {
     private int dt, mt, yt;
 
 
-//    protected void AnnLimitEmailsender(String yr, String email) {
-//        Toast.makeText(activity, "TODO - SEND EMAIL TO THE USER AS YEARLY SET LIMIT IS EXCEEDED ", Toast.LENGTH_SHORT).show();
-//        new LimitEmailSender(yr, email).execute();
-//        return;
-//    }
-
-
     //@SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,7 +100,7 @@ public class SetLimitActivity extends AppCompatActivity {
                 limEdit.putString(ALIMIT, a);
                 limEdit.apply();}
         });
-
+        // set user limit 0 once clear button is used
         clearbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -160,7 +153,6 @@ public class SetLimitActivity extends AppCompatActivity {
                 System.out.println("Day-total " + day_tol);
                 if (day_tol > Integer.parseInt(sharedPreferences.getString(DLIMIT,"0"))){
                     System.out.println("Day limit crossed");
-                    //Toast.makeText(activity, "TODO - SEND EMAIL TO THE USER AS DAILY SET LIMIT IS EXCEEDED ", Toast.LENGTH_SHORT).show();
                     new LimitEmailSender("You have exceeded the limit set for the day.Happy spending!", FirebaseAuth.getInstance().getCurrentUser().getEmail()).execute();
                 }
                 else {
@@ -190,7 +182,7 @@ public class SetLimitActivity extends AppCompatActivity {
                 }
                 System.out.println("Month-total " + mon_tot);
                 if (mt > Integer.parseInt(sharedPreferences.getString(MLIMIT,"0"))){
-                   // Toast.makeText(activity, "TODO - SEND EMAIL TO THE USER AS MONTHLY SET LIMIT IS EXCEEDED ", Toast.LENGTH_SHORT).show();
+                  
                     System.out.println("Email sent for monthly limit updtae");
                     new LimitEmailSender(" You have exceeded the limit set for month.Happy spending!", FirebaseAuth.getInstance().getCurrentUser().getEmail()).execute();
                 }

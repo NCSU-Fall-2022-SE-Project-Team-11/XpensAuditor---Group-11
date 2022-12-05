@@ -105,8 +105,8 @@ public class NavShowAnalysis extends AppCompatActivity {
         day2 = String.valueOf(dateTransac2.getDayOfMonth());
         month2 = String.valueOf(dateTransac2.getMonth());
         year2 = String.valueOf(dateTransac2.getYear());
-//        AnyChartView anyChartView = findViewById(R.id.any_chart_view);
-List<Integer> arr=new ArrayList<>();
+     // AnyChartView anyChartView = findViewById(R.id.any_chart_view);
+        List<Integer> arr=new ArrayList<>();
         d1 = (dateTransac1.getDayOfMonth());
         m1 = (dateTransac1.getMonth());
         y1 = (dateTransac1.getYear());

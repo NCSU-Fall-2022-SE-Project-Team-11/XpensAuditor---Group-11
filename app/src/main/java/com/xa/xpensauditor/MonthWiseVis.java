@@ -30,13 +30,13 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
-/**
- * Activity for creating monthly visualization
- */
 public class MonthWiseVis extends AppCompatActivity {
     private Firebase mRootRef;
     private Firebase RefUid,RefTran,RefUid1;
@@ -50,8 +50,9 @@ public class MonthWiseVis extends AppCompatActivity {
     private Button Vis;
     private String Tid;
     int tot=0;
-
+    int ii=0;
     static Map<Integer, Integer> hm = new HashMap<>();
+    Map<Date, Integer> sortedMap = new TreeMap<Date, Integer>();
 
     String tot1="Yes";
     FirebaseAuth auth;
@@ -62,10 +63,6 @@ public class MonthWiseVis extends AppCompatActivity {
     int d2, m2, y2;
     private Firebase RefTran3;
     @Override
-/**
- * Activity for creating monthly visualization
- */
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_month_wise_vis);
@@ -127,19 +124,16 @@ public class MonthWiseVis extends AppCompatActivity {
             }
 
             if (f) {
+                
                 System.out.println("Day_Wise   "+m2 +"    "+y2);
-                for(int ii=m1;ii<=m2;ii++){
+                
+                for( ii=m1;ii<=m2;ii++){
                 DatabaseReference reference= FirebaseDatabase.getInstance().getReference().child(Uid).child("DateRange").child(String.valueOf(ii + "-" + y2)).child("Transactions");
                 reference.addValueEventListener(new ValueEventListener() {
                     List<DataEntry> data = new ArrayList<>();
                     String dayy, dumm;
                     int dayy1, dumm1;
                     int dayyy;
-
-                    /** on data change for calculating monthly totals
-                     *
-                     * @param datasnapshot
-                     */
                     @Override
                     public void onDataChange(@NonNull DataSnapshot datasnapshot) {
 
@@ -150,31 +144,31 @@ public class MonthWiseVis extends AppCompatActivity {
                             tot = am1 + tot;
                             dumm = snapshot.child("Day").getValue().toString();
                             dumm1 = Integer.valueOf(dumm);
-                            System.out.println("dummmmm   " + dumm1 + "    " + dayyy);
-                            if (dayyy == dumm1) {
+                            System.out.println("Dummy  " + dumm1 + "    " + dayyy);
+                            Date date = new GregorianCalendar(y2, ii-1, dayyy).getTime();
+
+                            if(sortedMap.containsKey(date)){
                                 System.out.println("inside");
-                                int temp = 0;
-                                temp = hm.get(dayyy);
-                                temp = temp + am1;
-                                System.out.println("dummmmm1   " + dayyy + "    " + temp);
-                                hm.put(dayyy, temp);
+                                int temp=0;
+                                temp=sortedMap.get(date);
+                                temp=temp+am1;
+                                System.out.println("Dummy1   "+dayyy+"    "+temp);
+                                sortedMap.put(date,temp);
+                                System.out.println("Dates printing-4   ");
                             } else {
                                 dayy = snapshot.child("Day").getValue().toString();
                                 dayyy = Integer.parseInt(dayy);
-                                hm.put(dayyy, am1);
+                                sortedMap.put(date,am1);
                             }
                         }
 
-                        ArrayList<Integer> sortedKeys
-                                = new ArrayList<Integer>(hm.keySet());
-
-                        Collections.sort(sortedKeys);
-
-                        // Display the TreeMap which is naturally sorted
-                        for (Integer x : sortedKeys) {
-                            data.add(new ValueDataEntry(x, hm.get(x)));
+                        for (Map.Entry< Date,Integer> entry :
+                                sortedMap.entrySet()) {
+                            Integer strtype=Integer.parseInt(String.valueOf(entry.getValue()));
+                            data.add(new ValueDataEntry(String.valueOf(entry.getKey()),strtype));
                         }
-                        hm.clear();
+
+                        sortedMap.clear();
                         Column column = cartesian.column(data);
                         column.tooltip()
                                 .titleFormat("{%X}")
@@ -198,7 +192,7 @@ public class MonthWiseVis extends AppCompatActivity {
                         cartesian.yAxis(0).title("Expences");
 
 
-                        // System.out.println(Arrays.toString(arr.toArray())+" arrrrrayyyyy  ");
+                       
                     }
 
                     @Override
