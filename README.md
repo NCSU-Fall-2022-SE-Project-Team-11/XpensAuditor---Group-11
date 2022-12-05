@@ -35,12 +35,25 @@ https://user-images.githubusercontent.com/112219214/194787499-0125447e-f68d-444b
 ## Roadmap
 
  - Issues encountered and solved so far - [ISSUES](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/issues?q=is%3Aissue+is%3Aclosed)
- - Scope of Improvement :
- 
+ - Improved Items :
    - Analysis on detected expenses - Category wise expenses and expenditure graphs
-   - Detect transaction alerts from notifications and emails as well
-   - Add custom categories & Auto detect category by vendor
-   - Change password feature is implemented. Likewise, change email also needs to be implemented
+   - Added custom categories.
+   - Auto detect categories based on vendor.
+   - Change password feature is implemented.
+   - Added shared expenses feature.
+   - Email alerts when a shared expense is added (to all users involved in the expense).
+   - Daily/ Monthly limits for controlling spending.
+   - Notifications when spending limits are breached.
+   - Added feature to edit transactions.
+   - Updated documentation with automated Gradle task for generation & a GitHub pages website for hosting (linked aovve).
+
+
+## X-fold improvements:
+- Fine-tuned the Firebase schema to store data better and new fields for additional information which can be extended to build further improvements (such as improved personalization) in the future.
+- All the email alerts are configured to use an external API instead of a Java library to reduce the application size and to improve dependencies. This also lowers the complexity since there is a clear separation of responsibility. Lastly, we can also scale this further to use the same API for sending text alerts and to reach a wider audience.
+- Some of the tasks (including a few network calls) have been converted to asynchronous tasks to improve performance of the application. This also optimizes the overall performance of the application.
+- The usage of Firebase allows for dynamic scaling to reach more users as the load increase without having to modify the application.
+- Made the architechture more flexible by having a state-driven Firebase instance which enabled the app to cater to multiple user scenario where one user can log in and log out without having to worry about the state of the application. This can be scaled to any 'n' number of users using the application on a single device.
  
 
 ## License
