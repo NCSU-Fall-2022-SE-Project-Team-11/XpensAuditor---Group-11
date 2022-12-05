@@ -34,6 +34,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Activity for creating monthly visualization
+ */
 public class MonthWiseVis extends AppCompatActivity {
     private Firebase mRootRef;
     private Firebase RefUid,RefTran,RefUid1;
@@ -59,6 +62,9 @@ public class MonthWiseVis extends AppCompatActivity {
     int d2, m2, y2;
     private Firebase RefTran3;
     @Override
+/**
+ * Bundle instance for the MonthWiseVis class
+ */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_month_wise_vis);
@@ -129,6 +135,10 @@ public class MonthWiseVis extends AppCompatActivity {
                     int dayy1, dumm1;
                     int dayyy;
 
+                    /** on data change for calculating monthly totals
+                     *
+                     * @param datasnapshot
+                     */
                     @Override
                     public void onDataChange(@NonNull DataSnapshot datasnapshot) {
 
