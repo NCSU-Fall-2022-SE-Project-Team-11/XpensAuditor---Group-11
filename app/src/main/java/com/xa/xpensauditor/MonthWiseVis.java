@@ -126,6 +126,7 @@ public class MonthWiseVis extends AppCompatActivity {
             if (f) {
                 
                 System.out.println("Day_Wise   "+m2 +"    "+y2);
+                
                 for( ii=m1;ii<=m2;ii++){
                 DatabaseReference reference= FirebaseDatabase.getInstance().getReference().child(Uid).child("DateRange").child(String.valueOf(ii + "-" + y2)).child("Transactions");
                 reference.addValueEventListener(new ValueEventListener() {
