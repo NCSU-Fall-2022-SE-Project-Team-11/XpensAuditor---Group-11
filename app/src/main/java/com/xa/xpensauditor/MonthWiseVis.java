@@ -144,7 +144,7 @@ public class MonthWiseVis extends AppCompatActivity {
                             tot = am1 + tot;
                             dumm = snapshot.child("Day").getValue().toString();
                             dumm1 = Integer.valueOf(dumm);
-                            System.out.println("dummmmm   " + dumm1 + "    " + dayyy);
+                            System.out.println("Dummy  " + dumm1 + "    " + dayyy);
                             Date date = new GregorianCalendar(y2, ii-1, dayyy).getTime();
 
                             if(sortedMap.containsKey(date)){
