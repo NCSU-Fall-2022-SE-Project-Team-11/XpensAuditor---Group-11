@@ -25,7 +25,7 @@
  - Profile set up module is where user can update their details 
  - Account Settings are available to change password, send password reset email
 
-## [DOCS](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/)
+## Project Documentation - [DOCS](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/)
 
 ## Old Demo
 
