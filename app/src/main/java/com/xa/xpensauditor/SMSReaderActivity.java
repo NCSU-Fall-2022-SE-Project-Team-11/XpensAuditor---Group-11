@@ -30,6 +30,9 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * This activity reads SMS to add transaction in the application.
+ */
 public class SMSReaderActivity extends AppCompatActivity {
     String strDate,epochDate, shopName = "Unknown", smsMessagestr = "Couldn't fetch";
     long year, day, month;
@@ -41,7 +44,10 @@ public class SMSReaderActivity extends AppCompatActivity {
     boolean flsh = false, flamt = false, fldate = false;
     MultiValueMap<String, String> catgTrans1 = MultiValueMap.multiValueMap(new LinkedHashMap<String, Collection<String>>(), (Class<LinkedHashSet<String>>) (Class<?>) LinkedHashSet.class);
 
-
+    /**
+     * Loads data when page is created.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,6 +129,12 @@ public class SMSReaderActivity extends AppCompatActivity {
                     RefTran1 = RefUid.child("DateRange").child(String.valueOf(mm+"-"+yyyy)).child("Transactions");
                     RefTran1.addChildEventListener(new com.firebase.client.ChildEventListener() {
                         String amount, cat;
+
+                        /**
+                         * Triggered when a child node is added.
+                         * @param dataSnapshot
+                         * @param s
+                         */
                         @Override
                         public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                             int i = 0;
@@ -142,21 +154,39 @@ public class SMSReaderActivity extends AppCompatActivity {
                             catgTrans1.put(cat, amount);
                         }
 
+                        /**
+                         * Triggered when a child node in the database is updated or added.
+                         * @param dataSnapshot
+                         * @param s
+                         */
                         @Override
                         public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
                         }
 
+                        /**
+                         * Triggered when a child node in the database is removed.
+                         * @param dataSnapshot
+                         */
                         @Override
                         public void onChildRemoved(DataSnapshot dataSnapshot) {
 
                         }
 
+                        /**
+                         * Triggered when a child node in the database is moved.
+                         * @param dataSnapshot
+                         * @param s
+                         */
                         @Override
                         public void onChildMoved(DataSnapshot dataSnapshot, String s) {
 
                         }
 
+                        /**
+                         * Triggered when there is an error.
+                         * @param firebaseError
+                         */
                         @Override
                         public void onCancelled(FirebaseError firebaseError) {
 

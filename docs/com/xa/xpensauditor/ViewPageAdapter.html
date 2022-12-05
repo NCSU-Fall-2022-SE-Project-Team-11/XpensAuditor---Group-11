@@ -142,6 +142,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">ViewPageAdapter</span>
 extends androidx.fragment.app.FragmentPagerAdapter</pre>
+<div class="block">Manages two tabs in main page for Categorized and un-Categorized</div>
 </li>
 </ul>
 </div>
@@ -187,7 +188,9 @@ extends androidx.fragment.app.FragmentPagerAdapter</pre>
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(androidx.fragment.app.FragmentManager)">ViewPageAdapter</a></span>&#8203;(androidx.fragment.app.FragmentManager&nbsp;manager)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Constructor</div>
+</td>
 </tr>
 </table>
 </li>
@@ -211,22 +214,30 @@ extends androidx.fragment.app.FragmentPagerAdapter</pre>
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addFragment(androidx.fragment.app.Fragment,java.lang.String)">addFragment</a></span>&#8203;(androidx.fragment.app.Fragment&nbsp;fragment,
            <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">To add a new fragment to page</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCount()">getCount</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Get item count</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>androidx.fragment.app.Fragment</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItem(int)">getItem</a></span>&#8203;(int&nbsp;position)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Get item with position</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://developer.android.com/reference/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPageTitle(int)">getPageTitle</a></span>&#8203;(int&nbsp;position)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Get title of the page</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -273,6 +284,11 @@ extends androidx.fragment.app.FragmentPagerAdapter</pre>
 <li class="blockList">
 <h4>ViewPageAdapter</h4>
 <pre>public&nbsp;ViewPageAdapter&#8203;(androidx.fragment.app.FragmentManager&nbsp;manager)</pre>
+<div class="block">Constructor</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>manager</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -292,9 +308,13 @@ extends androidx.fragment.app.FragmentPagerAdapter</pre>
 <li class="blockList">
 <h4>getItem</h4>
 <pre class="methodSignature">public&nbsp;androidx.fragment.app.Fragment&nbsp;getItem&#8203;(int&nbsp;position)</pre>
+<div class="block">Get item with position</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>getItem</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.FragmentPagerAdapter</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>position</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
@@ -305,9 +325,11 @@ extends androidx.fragment.app.FragmentPagerAdapter</pre>
 <li class="blockList">
 <h4>getCount</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getCount()</pre>
+<div class="block">Get item count</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>getCount</code>&nbsp;in class&nbsp;<code>androidx.viewpager.widget.PagerAdapter</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
@@ -319,6 +341,12 @@ extends androidx.fragment.app.FragmentPagerAdapter</pre>
 <h4>addFragment</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;addFragment&#8203;(androidx.fragment.app.Fragment&nbsp;fragment,
                         <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title)</pre>
+<div class="block">To add a new fragment to page</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fragment</code> - </dd>
+<dd><code>title</code> - </dd>
+</dl>
 </li>
 </ul>
 <a id="getPageTitle(int)">
@@ -328,9 +356,13 @@ extends androidx.fragment.app.FragmentPagerAdapter</pre>
 <li class="blockList">
 <h4>getPageTitle</h4>
 <pre class="methodSignature">public&nbsp;<a href="https://developer.android.com/reference/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;getPageTitle&#8203;(int&nbsp;position)</pre>
+<div class="block">Get title of the page</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>getPageTitle</code>&nbsp;in class&nbsp;<code>androidx.viewpager.widget.PagerAdapter</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>position</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>

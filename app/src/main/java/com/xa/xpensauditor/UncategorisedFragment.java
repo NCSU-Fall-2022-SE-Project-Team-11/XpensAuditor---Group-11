@@ -35,7 +35,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.text.DateFormatSymbols;
 
-
+/**
+ * Manages uncategorized transactions of the user
+ */
 public class UncategorisedFragment extends Fragment {
 
     private String tagId, catChangeTo, tagDate;
@@ -54,7 +56,11 @@ public class UncategorisedFragment extends Fragment {
 
     private TransactionAdapter mAdapterUF;
 
-
+    /**
+     * Handles Fragments and transcation in the main page based on the position
+     * @param position
+     * @return
+     */
     public static Fragment getInstance(int position) {
         Bundle bundle = new Bundle();
         bundle.putInt("pos2", position);
@@ -62,6 +68,10 @@ public class UncategorisedFragment extends Fragment {
         uncategorisedFragment.setArguments(bundle);
         return uncategorisedFragment;
     }
+
+    /**
+     * Constructor
+     */
     public UncategorisedFragment() {
         // Required empty public constructor
         int i=0;
@@ -1087,7 +1097,13 @@ public class UncategorisedFragment extends Fragment {
         i++;
     }
 
-
+    /**
+     * Loads data when fragment is loaded
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -1095,6 +1111,11 @@ public class UncategorisedFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_uncategorised, container, false);
     }
 
+    /**
+     * Loads data when view is created.
+     * @param view
+     * @param savedInstanceState
+     */
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -1172,6 +1193,11 @@ public class UncategorisedFragment extends Fragment {
 
     }
 
+    /**
+     * Triggered when an item is clicked
+     * @param item
+     * @return
+     */
     @Override
     public boolean onContextItemSelected(MenuItem item) {
 
@@ -1285,7 +1311,9 @@ public class UncategorisedFragment extends Fragment {
         return super.onContextItemSelected(item);
     }
 
-
+    /**
+     * Add transaction data
+     */
     private void prepareTransactionData() {
         RefTran.addChildEventListener(new ChildEventListener() {
             String amount,cat,shname,shDay,shMonth,shYear,shMsg, sharedWith;
