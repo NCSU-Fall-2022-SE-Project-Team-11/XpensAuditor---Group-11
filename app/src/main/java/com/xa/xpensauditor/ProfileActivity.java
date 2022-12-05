@@ -30,7 +30,9 @@ import java.io.IOException;
 
 public class ProfileActivity extends AppCompatActivity {
 
-
+    /**
+     * Profile management class
+     */
     FirebaseAuth auth;
     private TextView NameView, EmailView, PhnView, UserDOB, UserAddress;
     private Firebase mRootRef;
