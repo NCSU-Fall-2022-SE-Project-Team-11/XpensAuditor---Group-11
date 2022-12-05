@@ -27,9 +27,13 @@
 
 ## [DOCS](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/)
 
-## Demo
+## Old Demo
 
 https://user-images.githubusercontent.com/112219214/194787499-0125447e-f68d-444b-9a86-559b14adf898.mp4
+
+## New Demo
+
+https://user-images.githubusercontent.com/95981350/205693235-612c9cdf-06b4-4c26-8195-1413991893e5.mp4
 
 
 ## Roadmap
