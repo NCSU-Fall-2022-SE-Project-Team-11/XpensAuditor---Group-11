@@ -97,7 +97,7 @@ public class SetLimitActivity extends AppCompatActivity {
                 limEdit.putString(ALIMIT, a);
                 limEdit.apply();}
         });
-
+        // set user limit 0 once clear button is used
         clearbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
