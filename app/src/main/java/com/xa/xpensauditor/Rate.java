@@ -17,7 +17,9 @@ import com.firebase.client.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Rate extends AppCompatActivity {
-
+    /**
+     * Rating Acitity to rate a search product
+     */
     RatingBar r;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

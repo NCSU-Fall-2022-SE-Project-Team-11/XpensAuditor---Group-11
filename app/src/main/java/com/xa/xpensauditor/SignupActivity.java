@@ -32,6 +32,9 @@ import com.google.firebase.storage.UploadTask;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * This class handles the Signup Activity of any user
+ */
 public class SignupActivity extends AppCompatActivity {
 
     private TextInputEditText inputEmail;

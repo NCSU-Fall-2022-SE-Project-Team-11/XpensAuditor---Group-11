@@ -271,7 +271,7 @@ public class AddTransactionActivity extends AppCompatActivity {
 
 
                 RefTran1.addChildEventListener(new com.firebase.client.ChildEventListener() {
-                    String amount, cat, shname, shDay, shMonth, shYear;
+                    String amount, cat, shname, shDay, shMonth, shYear,x ;
 
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {

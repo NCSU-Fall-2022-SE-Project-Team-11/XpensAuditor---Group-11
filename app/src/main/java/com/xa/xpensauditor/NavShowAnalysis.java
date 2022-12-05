@@ -54,6 +54,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+/**
+ * Navigation class to show visualizations
+ */
 public class NavShowAnalysis extends AppCompatActivity {
     private Firebase mRootRef;
     private Firebase RefUid,RefTran,RefUid1;

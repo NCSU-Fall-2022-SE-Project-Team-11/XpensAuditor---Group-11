@@ -22,6 +22,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Calendar;
 
+/**
+ * This class can be used to define and set the user limits
+ */
 public class SetLimitActivity extends AppCompatActivity {
     private Button setdailylimit, setmonthlylimit, setannuallimit, savebutton, clearbutton, retrievebutton;
     private ProgressBar progressBar;

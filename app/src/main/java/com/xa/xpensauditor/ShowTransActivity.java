@@ -18,6 +18,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Acitivity that sets all the transaction related fields
+ */
 public class ShowTransActivity extends AppCompatActivity {
     private Firebase mRootRef;
     private Firebase RefUid,RefTran;

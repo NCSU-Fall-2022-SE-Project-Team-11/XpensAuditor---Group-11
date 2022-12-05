@@ -29,6 +29,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import android.app.ProgressDialog;
 
+/**
+ * Used to search a product
+ */
 public class SearchProduct extends AppCompatActivity{
 
     static ListView listView;
