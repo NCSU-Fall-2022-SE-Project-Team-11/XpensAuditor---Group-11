@@ -179,7 +179,7 @@ public class SetLimitActivity extends AppCompatActivity {
                 }
                 System.out.println("Month-total " + mon_tot);
                 if (mt > Integer.parseInt(sharedPreferences.getString(MLIMIT,"0"))){
-                   // Toast.makeText(activity, "TODO - SEND EMAIL TO THE USER AS MONTHLY SET LIMIT IS EXCEEDED ", Toast.LENGTH_SHORT).show();
+                  
                     System.out.println("Email sent for monthly limit updtae");
                     new LimitEmailSender(" You have exceeded the limit set for month.Happy spending!", FirebaseAuth.getInstance().getCurrentUser().getEmail()).execute();
                 }
