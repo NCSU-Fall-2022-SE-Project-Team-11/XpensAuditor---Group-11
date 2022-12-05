@@ -41,13 +41,6 @@ public class SetLimitActivity extends AppCompatActivity {
     private int dt, mt, yt;
 
 
-//    protected void AnnLimitEmailsender(String yr, String email) {
-//        Toast.makeText(activity, "TODO - SEND EMAIL TO THE USER AS YEARLY SET LIMIT IS EXCEEDED ", Toast.LENGTH_SHORT).show();
-//        new LimitEmailSender(yr, email).execute();
-//        return;
-//    }
-
-
     //@SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
