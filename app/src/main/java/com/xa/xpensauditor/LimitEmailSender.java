@@ -85,7 +85,7 @@ public class LimitEmailSender extends AsyncTask<Void, Integer, Boolean> {
         }
         printLog("email response status : " + response.getStatus());
 
-       // printLog("email response data : " + response.getData());
+       printLog("email response data : " + response.getData());
 
         return true;
     }
