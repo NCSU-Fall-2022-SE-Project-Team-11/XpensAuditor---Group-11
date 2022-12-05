@@ -63,8 +63,9 @@ public class MonthWiseVis extends AppCompatActivity {
     private Firebase RefTran3;
     @Override
 /**
- * Bundle instance for the MonthWiseVis class
+ * Activity for creating monthly visualization
  */
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_month_wise_vis);
