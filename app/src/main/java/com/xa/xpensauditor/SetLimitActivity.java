@@ -150,7 +150,6 @@ public class SetLimitActivity extends AppCompatActivity {
                 System.out.println("Day-total " + day_tol);
                 if (day_tol > Integer.parseInt(sharedPreferences.getString(DLIMIT,"0"))){
                     System.out.println("Day limit crossed");
-                    //Toast.makeText(activity, "TODO - SEND EMAIL TO THE USER AS DAILY SET LIMIT IS EXCEEDED ", Toast.LENGTH_SHORT).show();
                     new LimitEmailSender("You have exceeded the limit set for the day.Happy spending!", FirebaseAuth.getInstance().getCurrentUser().getEmail()).execute();
                 }
                 else {
