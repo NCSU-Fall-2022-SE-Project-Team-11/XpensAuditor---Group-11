@@ -152,7 +152,7 @@ public class MonthWiseVis extends AppCompatActivity {
                                 int temp=0;
                                 temp=sortedMap.get(date);
                                 temp=temp+am1;
-                                System.out.println("dummmmm1   "+dayyy+"    "+temp);
+                                System.out.println("Dummy1   "+dayyy+"    "+temp);
                                 sortedMap.put(date,temp);
                                 System.out.println("Dates printing-4   ");
                             } else {
