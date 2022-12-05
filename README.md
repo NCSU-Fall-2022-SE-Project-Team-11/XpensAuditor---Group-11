@@ -25,6 +25,8 @@
  - Profile set up module is where user can update their details 
  - Account Settings are available to change password, send password reset email
 
+ NOTE: The 'docs' folder at the root contains the code documentation to be served via GitHub pages. The docs relating to project metrics and other elements are stored in the 'project_docs' folder.
+
 ## Project Documentation - [DOCS](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/)
 
 ## Old Demo
