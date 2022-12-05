@@ -192,7 +192,7 @@ public class MonthWiseVis extends AppCompatActivity {
                         cartesian.yAxis(0).title("Expences");
 
 
-                        // System.out.println(Arrays.toString(arr.toArray())+" arrrrrayyyyy  ");
+                       
                     }
 
                     @Override
