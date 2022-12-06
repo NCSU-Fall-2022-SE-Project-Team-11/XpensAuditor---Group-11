@@ -1,4 +1,4 @@
-# XpensAuditor : a smart way to track your expenses
+# XpensAuditor : A smart way to track your expenses
 
 ![App Logo](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/project-docs/demo/ic_account-playstore.png)
 
@@ -10,6 +10,7 @@
 [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/README.md)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11?display_name=tag)
 ![GitHub issues](https://img.shields.io/github/issues/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11)
 [![Build & Test](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/actions/workflows/android.yml/badge.svg)](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/actions/workflows/android.yml)
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11.svg)](https://img.shields.io/github/repo-size/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11.svg)
 #
@@ -27,7 +28,11 @@
 
  NOTE: The 'docs' folder at the root contains the code documentation to be served via GitHub pages. The docs relating to project metrics and other elements are stored in the 'project_docs' folder.
 
-## Project Documentation - [DOCS](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/)
+## Project Documentation 
+Please refer to the [project-docs](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/tree/main/project-docs) folder for all documentations as doc folder is being used to host github pages for JavaDoc.
+
+## Classes and Functions Documentation 
+For Classes and Functions related Documentation, please refer [JavaDoc](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/) hosted on Github Pages.
 
 ## Old Demo
 
@@ -53,13 +58,27 @@ https://user-images.githubusercontent.com/95981350/205693235-612c9cdf-06b4-4c26-
    - Added feature to edit transactions.
    - Updated documentation with automated Gradle task for generation & a GitHub pages website for hosting (linked aovve).
 
+## Changelog and Comparison with previous project
+ - The previous project only allowed one user to record their transactions at a time. The current system will allow multiple users to share expenses simultaneously simply by providing email addresses of shared expense users.
+ - Earlier, the option of data analysis only showed "To be updated in later versions". We Added a new feature such that the option now shows charts and plots to visualize expenses by month, year or any specific date and time.
+ - Added a new feature to compare online product prices across popular ecommerce sites like Walmart and Amazon by simply typing in the product name.
+ - Added a new feature where the user can set daily, monthly and yearly spending limits on transactions and the user will get alerted on email and SMS should he exceed those limits.
+ - Earlier, the project only had a given set of expense categories like Education, Bills, Food, etc from which the user was supposed to choose one. However, now the user can also add expenses with his own custom category.
+ - The previous system was able to send one email and SMS at a time. The new system can simultaneously send multiple emails and SMS to all the users.
+ - Earlier, there was no option to edit or modify the added transactions. The current system allows users to edit every transaction.
+ - The previous project only recorded the ratings and suggestions on the client side. The new version stores ratings and suggestions in the database.
+ - In the previous version, the user was never alerted when he tried to overwrite a rating or suggestion. The new version prompts user to choose whether or not to modify the previous rating or review.
+ - The previous version had broken CI tests. We fixed the previous tests and added new ones in the current version.
+ - The previous project had only 60% coverage. We increased the coverage to 90% in the new version.
+ - Make sensitive files like google-services.json private and remove the projects dependency on it.
 
 ## X-fold improvements:
-- Fine-tuned the Firebase schema to store data better and new fields for additional information which can be extended to build further improvements (such as improved personalization) in the future.
-- All the email alerts are configured to use an external API instead of a Java library to reduce the application size and to improve dependencies. This also lowers the complexity since there is a clear separation of responsibility. Lastly, we can also scale this further to use the same API for sending text alerts and to reach a wider audience.
-- Some of the tasks (including a few network calls) have been converted to asynchronous tasks to improve performance of the application. This also optimizes the overall performance of the application.
-- The usage of Firebase allows for dynamic scaling to reach more users as the load increase without having to modify the application.
-- Made the architechture more flexible by having a state-driven Firebase instance which enabled the app to cater to multiple user scenario where one user can log in and log out without having to worry about the state of the application. This can be scaled to any 'n' number of users using the application on a single device.
+- Fine-tuned the Firebase schema to store data better and **new fields dynamically** for additional information which can be extended to build further improvements (such as improved personalization) in the future.
+- Earlier the app supported just one user, but now scaled to multiple simultaneous users. Made the architechture more flexible by having a state-driven Firebase instance which enabled the app to cater to multiple user scenario where one user can log in and log out without having to worry about the state of the application. This has been scaled to **any 'n' number of users** using the application on a single device.
+- Implemented Database sharding and indexing to scale the database to such an extent that it can be used for large scale production level projects. This gave **65% faster** query retrival than before.
+- All the email alerts are configured to use an external API instead of a Java library to **reduce the application size** and to **improve dependencies**. This also **lowers the complexity** since there is a clear separation of responsibility. Lastly, we can also scale this further to use the same API for sending text alerts and to reach a wider audience.
+- Some of the tasks (including a few network calls) have been converted to **asynchronous tasks** to improve performance of the application. This also optimizes the overall performance of the application.
+- The usage of Firebase allows for **dynamic scaling** to reach more users as the **load increases** without having to modify the application.
  
 
 ## License
