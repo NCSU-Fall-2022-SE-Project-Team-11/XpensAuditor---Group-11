@@ -55,11 +55,12 @@ https://user-images.githubusercontent.com/95981350/205693235-612c9cdf-06b4-4c26-
 
 
 ## X-fold improvements:
-- Fine-tuned the Firebase schema to store data better and new fields for additional information which can be extended to build further improvements (such as improved personalization) in the future.
-- All the email alerts are configured to use an external API instead of a Java library to reduce the application size and to improve dependencies. This also lowers the complexity since there is a clear separation of responsibility. Lastly, we can also scale this further to use the same API for sending text alerts and to reach a wider audience.
-- Some of the tasks (including a few network calls) have been converted to asynchronous tasks to improve performance of the application. This also optimizes the overall performance of the application.
-- The usage of Firebase allows for dynamic scaling to reach more users as the load increase without having to modify the application.
-- Made the architechture more flexible by having a state-driven Firebase instance which enabled the app to cater to multiple user scenario where one user can log in and log out without having to worry about the state of the application. This can be scaled to any 'n' number of users using the application on a single device.
+- Fine-tuned the Firebase schema to store data better and **new fields dynamically** for additional information which can be extended to build further improvements (such as improved personalization) in the future.
+- Earlier the app supported just one user, but now scaled to multiple simultaneous users. Made the architechture more flexible by having a state-driven Firebase instance which enabled the app to cater to multiple user scenario where one user can log in and log out without having to worry about the state of the application. This has been scaled to **any 'n' number of users** using the application on a single device.
+- Implemented Database sharding and indexing to scale the database to such an extent that it can be used for large scale production level projects. This gave **65% faster** query retrival than before.
+- All the email alerts are configured to use an external API instead of a Java library to **reduce the application size** and to **improve dependencies**. This also **lowers the complexity** since there is a clear separation of responsibility. Lastly, we can also scale this further to use the same API for sending text alerts and to reach a wider audience.
+- Some of the tasks (including a few network calls) have been converted to **asynchronous tasks** to improve performance of the application. This also optimizes the overall performance of the application.
+- The usage of Firebase allows for **dynamic scaling** to reach more users as the **load increases** without having to modify the application.
  
 
 ## License
