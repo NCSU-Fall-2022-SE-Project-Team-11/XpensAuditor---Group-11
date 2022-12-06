@@ -1,4 +1,4 @@
-# XpensAuditor : a smart way to track your expenses
+# XpensAuditor : A smart way to track your expenses
 
 ![App Logo](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/project-docs/demo/ic_account-playstore.png)
 
@@ -28,7 +28,11 @@
 
  NOTE: The 'docs' folder at the root contains the code documentation to be served via GitHub pages. The docs relating to project metrics and other elements are stored in the 'project_docs' folder.
 
-## Project Documentation - [DOCS](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/)
+## Project Documentation 
+Please refer to the [project-docs](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/tree/main/project-docs) folder for all documentations as doc folder is being used to host github pages for JavaDoc.
+
+## Classes and Functions Documentation 
+For Classes and Functions related Documentation, please refer [JavaDoc](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/) hosted on Github Pages.
 
 ## Old Demo
 
