@@ -54,6 +54,19 @@ https://user-images.githubusercontent.com/95981350/205693235-612c9cdf-06b4-4c26-
    - Added feature to edit transactions.
    - Updated documentation with automated Gradle task for generation & a GitHub pages website for hosting (linked aovve).
 
+## Changelog and Comparison with previous project
+ - The previous project only allowed one user to record their transactions at a time. The current system will allow multiple users to share expenses simultaneously simply by providing email addresses of shared expense users.
+ - Earlier, the option of data analysis only showed "To be updated in later versions". We Added a new feature such that the option now shows charts and plots to visualize expenses by month, year or any specific date and time.
+ - Added a new feature to compare online product prices across popular ecommerce sites like Walmart and Amazon by simply typing in the product name.
+ - Added a new feature where the user can set daily, monthly and yearly spending limits on transactions and the user will get alerted on email and SMS should he exceed those limits.
+ - Earlier, the project only had a given set of expense categories like Education, Bills, Food, etc from which the user was supposed to choose one. However, now the user can also add expenses with his own custom category.
+ - The previous system was able to send one email and SMS at a time. The new system can simultaneously send multiple emails and SMS to all the users.
+ - Earlier, there was no option to edit or modify the added transactions. The current system allows users to edit every transaction.
+ - The previous project only recorded the ratings and suggestions on the client side. The new version stores ratings and suggestions in the database.
+ - In the previous version, the user was never alerted when he tried to overwrite a rating or suggestion. The new version prompts user to choose whether or not to modify the previous rating or review.
+ - The previous version had broken CI tests. We fixed the previous tests and added new ones in the current version.
+ - The previous project had only 60% coverage. We increased the coverage to 90% in the new version.
+ - Make sensitive files like google-services.json private and remove the projects dependency on it.
 
 ## X-fold improvements:
 - Fine-tuned the Firebase schema to store data better and **new fields dynamically** for additional information which can be extended to build further improvements (such as improved personalization) in the future.
