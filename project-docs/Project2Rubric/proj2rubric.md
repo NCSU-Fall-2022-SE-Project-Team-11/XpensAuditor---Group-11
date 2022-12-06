@@ -50,14 +50,14 @@ GitHub URL: https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---
 |If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation?| 3 | Yes, [JavaDoc](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/com/xa/xpensauditor/package-summary.html) |
 |Do you store your documentation under revision control with your source code?|3| Yes - [link](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/) and [location](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/tree/main/docs)                                                                       |
 |Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation?|3| Yes                                                                       |
-|Does your software describe how a user can get help with using your software?|3| Yes - [link](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11)                              |
-|Does your website and documentation describe what support, if any, you provide to users and developers?|3| yes once application is installed, user can submit feedback.                              |
-|Does your project have an e-mail address or forum that is solely for supporting users?|3|  Yes                                                                         |
+|Does your software describe how a user can get help with using your software?|3| Yes, [README.md](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/feat/update_rubric/README.md)<br/> [CONTRIBUTING.MD](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/CONTRIBUTING.md)  |
+|Does your website and documentation describe what support, if any, you provide to users and developers?|3| Yes, [README.md](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/feat/update_rubric/README.md)<br/> [CONTRIBUTING.MD](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/CONTRIBUTING.md)   |
+|Does your project have an e-mail address or forum that is solely for supporting users?|3|   Yes, [README.md](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/feat/update_rubric/README.md)<br/> [CONTRIBUTING.MD](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/CONTRIBUTING.md)                                                                           |
 |Are e-mails to your support e-mail address received by more than one person?|3| Yes. Credentials are known to all members of the group                    |
 |Does your project have a ticketing system to manage bug reports and feature requests?|3| Yes. Github issues.                                                        |
 |Is your project's ticketing system publicly visible to your users, so they can view bug reports and feature requests?|3| Yes. Github issues.                                                        |
 |Is your software’s architecture and design modular?|3| Yes. Highly modular and self explanatory and easy to scale up            |
-|Does your software use an accepted coding standard or convention?|3|                                                                           |
+|Does your software use an accepted coding standard or convention?|3| [Java checker and Android checker](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/feat/update_rubric/.github/workflows/checker.yml) |
 |Does your software allow data to be imported and exported using open data formats?|3| Yes                                                                       |
 |Does your software allow communications using open communications protocols?|3| Yes                                                                       |
 |Is your software cross-platform compatible?|3| N/A                                                                       |
@@ -80,10 +80,10 @@ GitHub URL: https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---
 |Do you have a framework to periodically (e.g. nightly) run your tests on the latest version of the source code?|3| Yes - [link](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/.github/workflows/android.yml)                        |
 |Do you use continuous integration, automatically running tests whenever changes are made to your source code?|3| Yes - [link](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/.github/workflows/android.yml)                        |
 |Are your test results publicly visible?|3|   Yes                                                                        |
-|Are all manually-run tests documented?|N/A|                                                                           |
+|Are all manually-run tests documented?|0|                                                                           |
 |Does your project have resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software?|N/A|                                                                           |
 |Does your website state how many projects and users are associated with your project?|3|                               |  Yes - [here](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11)
-|Do you provide success stories on your website?|N/A||
+|Do you provide success stories on your website?|0||
 |Do you list your important partners and collaborators on your website?|3| Yes - [link](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11)                                  |
 |Do you list your project's publications on your website or link to a resource where these are available?|N/A||
 |Do you list third-party publications that refer to your software on your website or link to a resource where these are available?|N/A||
@@ -101,5 +101,5 @@ GitHub URL: https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---
 |Does each of your source code files include a licence header?|3| Yes                                                                       |
 |Do you have a recommended citation for your software?|3| Yes - [link](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/CITATION.cff)          |
 |Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)?|3| Yes - [here](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11)                             |
-|Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed?|N/A||
-|Do you make timely announcements of the deprecation of components, APIs, etc.?|N/A||
+|Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed?|0||
+|Do you make timely announcements of the deprecation of components, APIs, etc.?|3| We make timely announcements in Github Discussions|
