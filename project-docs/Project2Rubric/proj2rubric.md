@@ -1,7 +1,40 @@
-### Rubric:
-
+### Project Rubric:
+Total Points from Self-Assessment: 255<br/>
+GitHub URL: https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11
 | Area                                                                                                                                                | Assessment | Evidence                                                                                                                                                                                                                           |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Video1|3 |[Old Video](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11#old-demo) <br/> [New Video](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11#new-demo) |
+|Bonus: Xfold improvement| 3 | [README.md](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11#x-fold-improvements) |
+|Docs: what: point descriptions of each class/function (in isolation) | 3 | [JavaDoc](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/com/xa/xpensauditor/package-summary.html) |
+|Use of style checkers | 3 | [Java checker and Android checker](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/.github/workflows/checker.yml) |
+|Use of code formatters. | 3 | [Java checker and Android checker](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/.github/workflows/checker.yml) |
+|Use of syntax checkers. | 3 | [Java checker and Android checker](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/.github/workflows/checker.yml) |
+|Use of code coverage | 3 | [Codecov](https://app.codecov.io/gh/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/) |
+|Other automated analysis tools| 3 | [Codecov + Github Actions + Java, Android checkers](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/actions)
+|Workload is spread over the whole team (one team member is often Xtimes more productive than the others but nevertheless, here is a track record that everyone is contributing a lot)| 3 | [Contributor Stats](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/graphs/contributors) |
+|Number of commits| 3 | [Commit Activity](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/graphs/commit-activity) |
+|Number of commits: by different people| 3 | [Commit Pulse (Monthly)](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/pulse/monthly) |
+|Issues reports: there are **many**| 3 | [Issue Reports](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/issues?q=is%3Aissue+is%3Aclosed) |
+|Issues are being closed| 3 | [Closed Issues](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/issues?q=is%3Aissue+is%3Aclosed) |
+|DOI badge: exists| 3 | [DOI](https://zenodo.org/record/7401047#.Y47XxuzMK3I)<br/> [README.md](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11#xpensauditor--a-smart-way-to-track-your-expenses) |
+|Docs: doco generated, format not ugly | 3 | [JavaDoc](https://ncsu-fall-2022-se-project-team-11.github.io/XpensAuditor---Group-11/com/xa/xpensauditor/package-summary.html)<br/>[README.md](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/feat/update_rubric/README.md) |
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z| 3 | [New Video](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11#new-demo)<br/>[README.md](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/feat/update_rubric/README.md) |
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing| 3 | [New Video](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11#new-demo)<br/>[README.md](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/feat/update_rubric/README.md) |
+|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.| 3 | [New Video](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11#new-demo) |
+|Use of version control tools| 3 | [Git, Github](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/pulse/monthly) |
+|Test cases exist| 3 | [Test Cases Directory](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/tree/main/app/src/androidTest/java/com/xa/xpensauditor) |
+|Test cases are routinely executed| 3 | [CI Tests in Github Actions](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/actions/workflows/android.yml)|
+|The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 | [CONTRIBUTING.MD](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/CONTRIBUTING.md) |
+|Issues are discussed before they are closed|even if you discuss in slack, need a sumamry statement here|
+|Chat channel: exists|Link or screenshots|
+|Test cases: a large proportion of the issues related to handling failing cases.|If a test case fails, open an issue and fix it|
+|Evidence that the whole team is using the same tools: everyone can get to all tools and files|
+|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|
+|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|
+|Evidence that the members of the team are working across multiple places in the code base|
+|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|
+
+
 | Video 1                                                                                                                                             | 3          |  [Readme](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11) and [link](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/7b38a13369c546450f2854bbe05f20ca48bf89c6/project-docs/demo/XpensAuditor_Demo.mp4)                                                                                                                                                                            |
 | Video 2                                                                                                                                             | 3          | [Readme](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11) and [link](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/7b38a13369c546450f2854bbe05f20ca48bf89c6/project-docs/demo/XpenAuditor_Demo_New.mp4)                                                                                                                                                                             |
 | Workload is spread over whole team                                                                                                                  | 3          | Yes - [link](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/pulse/monthly)                     |
