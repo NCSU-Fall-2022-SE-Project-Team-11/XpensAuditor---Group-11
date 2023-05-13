@@ -14,6 +14,8 @@
 [![Build & Test](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/actions/workflows/android.yml/badge.svg)](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/actions/workflows/android.yml)
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11.svg)](https://img.shields.io/github/repo-size/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11.svg)
 #
+**Java**, **Python**, **Firebase** Android App to track and share expenses among multiple users with several features like real time SMS and email alerts, interactive charts of expenses, custom category, etc. The data is stored in **Firebase** and the app also scrapes and compares prices of online products across e-commerce websites like Walmart and Amazon and gives the best recommendation. Integrated the app with **Telegram** chatbots using **Python** APIs for additional features.
+
 
 ## Summary
  
