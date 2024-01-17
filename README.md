@@ -1,6 +1,5 @@
 # XpensAuditor : A smart way to track your expenses
-
-![App Logo](https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/project-docs/demo/ic_account-playstore.png)
+<img src="https://github.com/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/blob/main/project-docs/demo/ic_account-playstore.png" alt="app_icon" width="250px" />
 
 [![Code Coverage](https://codecov.io/gh/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/branch/main/graphs/badge.svg)](https://codecov.io/gh/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/branch/main)
 [![DOI](https://zenodo.org/badge/566109274.svg)](https://zenodo.org/badge/latestdoi/566109274)
